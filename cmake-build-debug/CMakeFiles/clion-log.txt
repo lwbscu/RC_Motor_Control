@@ -1,0 +1,5 @@
+D:\STM32CubeMx\JetBrains\CLion2020.3.4\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control
+-- Minimal optimization, debug info included
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/cmake-build-debug
