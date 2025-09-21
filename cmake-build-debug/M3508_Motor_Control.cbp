@@ -165,66 +165,6 @@
 		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/CMSIS/Device/ST/STM32G4xx/LICENSE.txt">
 			<Option target="M3508_Motor_Control.elf"/>
 		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_fdcan.h">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
-		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/LICENSE.txt">
-			<Option target="M3508_Motor_Control.elf"/>
-		</Unit>
 		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c">
 			<Option target="M3508_Motor_Control.elf"/>
 		</Unit>
@@ -271,6 +211,12 @@
 			<Option target="M3508_Motor_Control.elf"/>
 		</Unit>
 		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c">
+			<Option target="M3508_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c">
+			<Option target="M3508_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c">
 			<Option target="M3508_Motor_Control.elf"/>
 		</Unit>
 		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/STM32G474VETx_FLASH.ld">

@@ -880,6 +880,60 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.s
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.s
 
+Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+
+.PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.obj
+
+# target to build an object file
+Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+.PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+
+Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.i
+
+.PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.i
+
+# target to preprocess a source file
+Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.i
+.PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.i
+
+Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.s
+
+.PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.s
+
+# target to generate assembly for a file
+Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.s
+.PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.s
+
+Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+
+.PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.obj
+
+# target to build an object file
+Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+.PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+
+Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.i
+
+.PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.i
+
+# target to preprocess a source file
+Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.i
+.PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.i
+
+Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.s
+
+.PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.s
+
+# target to generate assembly for a file
+Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.s
+.PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -971,6 +1025,12 @@ help:
 	@echo ... Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.obj
 	@echo ... Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.i
 	@echo ... Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.s
+	@echo ... Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.obj
+	@echo ... Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.i
+	@echo ... Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.s
+	@echo ... Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.obj
+	@echo ... Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.i
+	@echo ... Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.s
 .PHONY : help
 
 

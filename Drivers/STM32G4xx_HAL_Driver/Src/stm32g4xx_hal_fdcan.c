@@ -2143,7 +2143,7 @@ HAL_StatusTypeDef HAL_FDCAN_AddMessageToTxFifoQ(FDCAN_HandleTypeDef *hfdcan, con
       PutIndex = ((hfdcan->Instance->TXFQS & FDCAN_TXFQS_TFQPI) >> FDCAN_TXFQS_TFQPI_Pos);
 
       /* Add the message to the Tx FIFO/Queue */
-       FDCAN_CopyMessageToRAM(hfdcan, pTxHeader, pTxData, PutIndex);
+      FDCAN_CopyMessageToRAM(hfdcan, pTxHeader, pTxData, PutIndex);
 
       /* Activate the corresponding transmission request */
       hfdcan->Instance->TXBAR = ((uint32_t)1 << PutIndex);

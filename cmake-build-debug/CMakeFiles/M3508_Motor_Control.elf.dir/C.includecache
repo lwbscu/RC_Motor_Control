@@ -6,30 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../Core/Inc/can_communication.h
-main.h
-../Core/Inc/main.h
-
-../Core/Inc/m3508_motor.h
-main.h
-../Core/Inc/main.h
-pid_controller.h
-../Core/Inc/pid_controller.h
-can_communication.h
-../Core/Inc/can_communication.h
-math.h
--
-
-../Core/Inc/main.h
-stm32g4xx_hal.h
-../Core/Inc/stm32g4xx_hal.h
-
-../Core/Inc/pid_controller.h
-stdint.h
--
-stdbool.h
--
-
 ../Core/Inc/stm32g4xx_hal_conf.h
 stm32g4xx_hal_rcc.h
 ../Core/Inc/stm32g4xx_hal_rcc.h
@@ -282,7 +258,21 @@ stm32g4xx_hal_tim_ex.h
 stm32g4xx_hal_def.h
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h
 
-D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Core/Src/m3508_motor.c
-m3508_motor.h
-D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Core/Src/m3508_motor.h
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h
+stm32g4xx_hal_def.h
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h
+stm32g4xx_hal_uart_ex.h
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h
+
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h
+stm32g4xx_hal_def.h
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h
+
+D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c
+stm32g4xx_hal.h
+D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.h
+
+D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c
+stm32g4xx_hal.h
+D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.h
 

@@ -53,13 +53,31 @@ add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx)
 # 改进文件收集，排除不需要的CMSIS模板和测试文件
 file(GLOB_RECURSE SOURCES
         "Core/*.*"
-        "Drivers/STM32G4xx_HAL_Driver/*.*"
+        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c"          # 基础HAL
+        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c"    # Cortex内核相关
+        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c"       # DMA（若依赖）
+        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c"    # DMA扩展（若依赖）
+        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c"      # EXTI（若依赖）
+        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c"     # FDCAN（M3508电机需用）
+        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c"     # Flash
+        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c"  # Flash扩展
+        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c" # Flash RAM函数
+        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c"      # GPIO
+        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c"       # PWR
+        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c"    # PWR扩展
+        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c"       # RCC时钟
+        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c"    # RCC扩展
+        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c"       # TIM定时器（电机控制需用）
+        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c"    # TIM扩展
+        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c"      # UART核心驱动（关键！）
+        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c"   # UART扩展驱动（关键！）
         "Drivers/CMSIS/Device/*.*"
         )
 
 # 排除不需要的CMSIS模板文件
 list(FILTER SOURCES EXCLUDE REGEX ".*Template.*")
 list(FILTER SOURCES EXCLUDE REGEX ".*TestSuite.*")
+
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32G474VETX_FLASH.ld)
 

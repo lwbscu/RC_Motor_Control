@@ -52,6 +52,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c" "D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/cmake-build-debug/CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj"
   "D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c" "D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/cmake-build-debug/CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj"
   "D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c" "D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/cmake-build-debug/CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj"
+  "D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c" "D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/cmake-build-debug/CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj"
+  "D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c" "D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/cmake-build-debug/CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

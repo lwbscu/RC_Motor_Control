@@ -8,6 +8,12 @@ d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.
                               CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj (__aeabi_fcmplt)
 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_fixsfsi.o)
                               CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj (__aeabi_f2iz)
+d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+                              CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj (__aeabi_uldivmod)
+d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+                              d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o) (__udivmoddi4)
+d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_dvmd_tls.o)
+                              d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o) (__aeabi_ldiv0)
 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-errno.o)
                               CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/syscalls.c.obj (__errno)
 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-exit.o)
@@ -67,6 +73,8 @@ Discarded input sections
                 0x00000000       0x34 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
  .text.HAL_TIM_Base_MspDeInit
                 0x00000000       0x24 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+ .text.HAL_UART_MspDeInit
+                0x00000000       0x34 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
  .text          0x00000000        0x0 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
  .data          0x00000000        0x0 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
  .bss           0x00000000        0x0 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
@@ -260,10 +268,6 @@ Discarded input sections
                 0x00000000       0x52 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
  .text.HAL_DMA_Start_IT
                 0x00000000       0x94 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
- .text.HAL_DMA_Abort
-                0x00000000       0x6c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
- .text.HAL_DMA_Abort_IT
-                0x00000000       0x7e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
  .text.HAL_DMA_PollForTransfer
                 0x00000000      0x11c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
  .text.HAL_DMA_IRQHandler
@@ -276,18 +280,6 @@ Discarded input sections
                 0x00000000        0x6 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
  .text.HAL_DMA_GetError
                 0x00000000        0x4 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
- .debug_info    0x00000000      0xa56 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
- .debug_abbrev  0x00000000      0x216 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
- .debug_loc     0x00000000      0x8a0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
- .debug_aranges
-                0x00000000       0x90 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
- .debug_ranges  0x00000000       0x80 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
- .debug_line    0x00000000      0xd3a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
- .debug_str     0x00000000      0x80d CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
- .comment       0x00000000       0x4a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
- .debug_frame   0x00000000      0x16c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
- .ARM.attributes
-                0x00000000       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
  .text          0x00000000        0x0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj
  .data          0x00000000        0x0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj
  .bss           0x00000000        0x0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj
@@ -694,8 +686,6 @@ Discarded input sections
                 0x00000000       0xcc CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
  .text.HAL_RCC_MCOConfig
                 0x00000000       0x5c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
- .text.HAL_RCC_GetPCLK1Freq
-                0x00000000       0x24 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
  .text.HAL_RCC_GetOscConfig
                 0x00000000       0xf4 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
  .text.HAL_RCC_EnableCSS
@@ -1091,6 +1081,150 @@ Discarded input sections
                 0x00000000        0x6 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
  .text.HAL_TIMEx_GetChannelNState
                 0x00000000       0x2a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .text          0x00000000        0x0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .data          0x00000000        0x0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_EndTxTransfer
+                0x00000000       0x32 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_TxISR_8BIT
+                0x00000000       0x56 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_TxISR_16BIT
+                0x00000000       0x5a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_TxISR_8BIT_FIFOEN
+                0x00000000       0x74 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_TxISR_16BIT_FIFOEN
+                0x00000000       0x78 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_MspInit
+                0x00000000        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_MspDeInit
+                0x00000000        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_DeInit
+                0x00000000       0x44 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_Transmit_IT
+                0x00000000       0xac CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_Transmit_DMA
+                0x00000000       0xa0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_DMAPause
+                0x00000000       0x8a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_DMAResume
+                0x00000000       0x7c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_DMAStop
+                0x00000000       0xb2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_Abort
+                0x00000000      0x122 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_AbortTransmit
+                0x00000000       0x98 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_AbortReceive
+                0x00000000       0xb8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_DMATransmitCplt
+                0x00000000       0x48 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_TxHalfCpltCallback
+                0x00000000        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_DMATxHalfCplt
+                0x00000000        0xa CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_RxCpltCallback
+                0x00000000        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_RxHalfCpltCallback
+                0x00000000        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_DMAError
+                0x00000000       0x58 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_AbortCpltCallback
+                0x00000000        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_Abort_IT
+                0x00000000      0x150 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_DMARxAbortCallback
+                0x00000000       0x44 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_DMATxAbortCallback
+                0x00000000       0x50 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_AbortTransmitCpltCallback
+                0x00000000        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_AbortTransmit_IT
+                0x00000000       0xac CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_DMATxOnlyAbortCallback
+                0x00000000       0x2a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_AbortReceiveCpltCallback
+                0x00000000        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_AbortReceive_IT
+                0x00000000       0xd8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_DMARxOnlyAbortCallback
+                0x00000000       0x28 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_RxISR_8BIT
+                0x00000000       0xdc CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_RxISR_16BIT
+                0x00000000       0xd8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_RxISR_8BIT_FIFOEN
+                0x00000000      0x1cc CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_RxISR_16BIT_FIFOEN
+                0x00000000      0x1c8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_DMARxHalfCplt
+                0x00000000       0x20 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_DMAReceiveCplt
+                0x00000000       0x92 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_ReceiverTimeout_Config
+                0x00000000       0x18 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_EnableReceiverTimeout
+                0x00000000       0x4c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_DisableReceiverTimeout
+                0x00000000       0x4c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_MultiProcessor_EnterMuteMode
+                0x00000000        0xc CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_HalfDuplex_EnableTransmitter
+                0x00000000       0x4c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_HalfDuplex_EnableReceiver
+                0x00000000       0x4c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_LIN_SendBreak
+                0x00000000       0x32 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_GetState
+                0x00000000        0xc CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_GetError
+                0x00000000        0x6 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_Transmit
+                0x00000000       0xd2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_Receive
+                0x00000000      0x118 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_HalfDuplex_Init
+                0x00000000       0x72 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_LIN_Init
+                0x00000000       0x96 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_MultiProcessor_Init
+                0x00000000       0x8e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_MultiProcessor_EnableMuteMode
+                0x00000000       0x38 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_MultiProcessor_DisableMuteMode
+                0x00000000       0x38 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_Start_Receive_IT
+                0x00000000      0x13c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_Receive_IT
+                0x00000000       0x4c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.UART_Start_Receive_DMA
+                0x00000000       0xb0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_Receive_DMA
+                0x00000000       0x4c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text          0x00000000        0x0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+ .data          0x00000000        0x0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+ .text.UARTEx_Wakeup_AddressConfig
+                0x00000000       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+ .text.HAL_RS485Ex_Init
+                0x00000000       0x86 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+ .text.HAL_MultiProcessorEx_AddressLength_Set
+                0x00000000       0x38 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+ .text.HAL_UARTEx_StopModeWakeUpSourceConfig
+                0x00000000       0x82 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+ .text.HAL_UARTEx_EnableStopMode
+                0x00000000       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+ .text.HAL_UARTEx_DisableStopMode
+                0x00000000       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+ .text.HAL_UARTEx_EnableFifoMode
+                0x00000000       0x48 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+ .text.HAL_UARTEx_ReceiveToIdle
+                0x00000000      0x162 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+ .text.HAL_UARTEx_ReceiveToIdle_IT
+                0x00000000       0x4e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+ .text.HAL_UARTEx_ReceiveToIdle_DMA
+                0x00000000       0x50 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+ .text.HAL_UARTEx_GetRxEventType
+                0x00000000        0x4 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
  .data          0x00000000        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_mulsf3.o)
  .bss           0x00000000        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_mulsf3.o)
  .data          0x00000000        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_addsubsf3.o)
@@ -1099,6 +1233,13 @@ Discarded input sections
  .bss           0x00000000        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_cmpsf2.o)
  .data          0x00000000        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_fixsfsi.o)
  .bss           0x00000000        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_fixsfsi.o)
+ .data          0x00000000        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x00000000        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+ .data          0x00000000        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+ .bss           0x00000000        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+ .ARM.extab     0x00000000        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+ .data          0x00000000        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-errno.o)
  .data          0x00000000        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-errno.o)
  .bss           0x00000000        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-errno.o)
@@ -1224,6 +1365,8 @@ LOAD CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm
 LOAD CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
 LOAD CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
 LOAD CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+LOAD CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+LOAD CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
 START GROUP
 LOAD d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a
 LOAD d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a
@@ -1242,7 +1385,7 @@ LOAD d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-
                 0x08000000                g_pfnVectors
                 0x080001d8                . = ALIGN (0x4)
 
-.text           0x080001d8     0x2da4
+.text           0x080001d8     0x3dfc
                 0x080001d8                . = ALIGN (0x4)
  *(.text)
  .text          0x080001d8       0x40 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
@@ -1282,511 +1425,596 @@ LOAD d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-
  .text          0x08000688       0x4c d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_fixsfsi.o)
                 0x08000688                __aeabi_f2iz
                 0x08000688                __fixsfsi
+ .text          0x080006d4       0x30 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+                0x080006d4                __aeabi_uldivmod
+ .text          0x08000704      0x2d0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x08000704                __udivmoddi4
+ .text          0x080009d4        0x4 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_dvmd_tls.o)
+                0x080009d4                __aeabi_idiv0
+                0x080009d4                __aeabi_ldiv0
  *(.text*)
  .text.CAN_Init
-                0x080006d4       0x3c CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/can_communication.c.obj
-                0x080006d4                CAN_Init
+                0x080009d8       0x3c CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/can_communication.c.obj
+                0x080009d8                CAN_Init
  .text.CAN_SendMotorCommand
-                0x08000710       0x40 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/can_communication.c.obj
-                0x08000710                CAN_SendMotorCommand
+                0x08000a14       0x40 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/can_communication.c.obj
+                0x08000a14                CAN_SendMotorCommand
  .text.CAN_ReceiveCallback
-                0x08000750       0x58 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/can_communication.c.obj
-                0x08000750                CAN_ReceiveCallback
+                0x08000a54       0x58 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/can_communication.c.obj
+                0x08000a54                CAN_ReceiveCallback
  .text.M3508_Init
-                0x080007a8       0x40 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj
-                0x080007a8                M3508_Init
+                0x08000aac       0x40 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj
+                0x08000aac                M3508_Init
  .text.M3508_UpdateFeedback
-                0x080007e8       0x60 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj
-                0x080007e8                M3508_UpdateFeedback
+                0x08000aec       0x60 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj
+                0x08000aec                M3508_UpdateFeedback
  .text.M3508_SetTargetSpeed
-                0x08000848        0xc CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj
-                0x08000848                M3508_SetTargetSpeed
+                0x08000b4c        0xc CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj
+                0x08000b4c                M3508_SetTargetSpeed
  .text.M3508_ControlUpdate
-                0x08000854       0x2c CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj
-                0x08000854                M3508_ControlUpdate
+                0x08000b58       0x2c CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj
+                0x08000b58                M3508_ControlUpdate
  .text.MX_GPIO_Init
-                0x08000880       0x78 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+                0x08000b84       0x8c CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
  .text.LED_Init
-                0x080008f8       0x54 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+                0x08000c10       0x54 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
  .text.HAL_FDCAN_RxFifo0Callback
-                0x0800094c       0x10 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
-                0x0800094c                HAL_FDCAN_RxFifo0Callback
+                0x08000c64       0x10 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+                0x08000c64                HAL_FDCAN_RxFifo0Callback
  .text.HAL_TIM_PeriodElapsedCallback
-                0x0800095c       0x80 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
-                0x0800095c                HAL_TIM_PeriodElapsedCallback
+                0x08000c74       0x80 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+                0x08000c74                HAL_TIM_PeriodElapsedCallback
  .text.Error_Handler
-                0x080009dc       0x48 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
-                0x080009dc                Error_Handler
+                0x08000cf4       0x48 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+                0x08000cf4                Error_Handler
  .text.MX_FDCAN1_Init
-                0x08000a24       0x48 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+                0x08000d3c       0x48 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
  .text.MX_TIM2_Init
-                0x08000a6c       0x6c CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+                0x08000d84       0x6c CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+ .text.MX_USART1_UART_Init
+                0x08000df0       0x60 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
  .text.SystemClock_Config
-                0x08000ad8       0x76 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
-                0x08000ad8                SystemClock_Config
- *fill*         0x08000b4e        0x2 
- .text.main     0x08000b50       0xb8 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
-                0x08000b50                main
+                0x08000e50       0x76 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+                0x08000e50                SystemClock_Config
+ *fill*         0x08000ec6        0x2 
+ .text.main     0x08000ec8       0xbc CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+                0x08000ec8                main
  .text.MotorControl_Init
-                0x08000c08       0x12 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
-                0x08000c08                MotorControl_Init
+                0x08000f84       0x12 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
+                0x08000f84                MotorControl_Init
  .text.MotorControl_Task
-                0x08000c1a        0xc CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
-                0x08000c1a                MotorControl_Task
- *fill*         0x08000c26        0x2 
+                0x08000f96        0xc CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
+                0x08000f96                MotorControl_Task
+ *fill*         0x08000fa2        0x2 
  .text.MotorControl_Test
-                0x08000c28       0x74 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
-                0x08000c28                MotorControl_Test
+                0x08000fa4       0x74 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
+                0x08000fa4                MotorControl_Test
  .text.PID_Init
-                0x08000c9c       0x20 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
-                0x08000c9c                PID_Init
+                0x08001018       0x20 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
+                0x08001018                PID_Init
  .text.PID_Calculate
-                0x08000cbc       0xa0 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
-                0x08000cbc                PID_Calculate
+                0x08001038       0xa0 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
+                0x08001038                PID_Calculate
  .text.HAL_MspInit
-                0x08000d5c       0x38 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
-                0x08000d5c                HAL_MspInit
+                0x080010d8       0x38 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+                0x080010d8                HAL_MspInit
  .text.HAL_FDCAN_MspInit
-                0x08000d94       0xa0 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
-                0x08000d94                HAL_FDCAN_MspInit
+                0x08001110       0xa0 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+                0x08001110                HAL_FDCAN_MspInit
  .text.HAL_TIM_Base_MspInit
-                0x08000e34       0x3a CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
-                0x08000e34                HAL_TIM_Base_MspInit
- *fill*         0x08000e6e        0x2 
+                0x080011b0       0x3a CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+                0x080011b0                HAL_TIM_Base_MspInit
+ *fill*         0x080011ea        0x2 
+ .text.HAL_UART_MspInit
+                0x080011ec       0x98 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+                0x080011ec                HAL_UART_MspInit
  .text.HAL_InitTick
-                0x08000e70       0x94 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
-                0x08000e70                HAL_InitTick
+                0x08001284       0x94 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
+                0x08001284                HAL_InitTick
  .text.NMI_Handler
-                0x08000f04        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08000f04                NMI_Handler
+                0x08001318        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001318                NMI_Handler
  .text.HardFault_Handler
-                0x08000f06        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08000f06                HardFault_Handler
+                0x0800131a        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x0800131a                HardFault_Handler
  .text.MemManage_Handler
-                0x08000f08        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08000f08                MemManage_Handler
+                0x0800131c        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x0800131c                MemManage_Handler
  .text.BusFault_Handler
-                0x08000f0a        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08000f0a                BusFault_Handler
+                0x0800131e        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x0800131e                BusFault_Handler
  .text.UsageFault_Handler
-                0x08000f0c        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08000f0c                UsageFault_Handler
+                0x08001320        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001320                UsageFault_Handler
  .text.SVC_Handler
-                0x08000f0e        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08000f0e                SVC_Handler
+                0x08001322        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001322                SVC_Handler
  .text.DebugMon_Handler
-                0x08000f10        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08000f10                DebugMon_Handler
+                0x08001324        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001324                DebugMon_Handler
  .text.PendSV_Handler
-                0x08000f12        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08000f12                PendSV_Handler
+                0x08001326        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001326                PendSV_Handler
  .text.SysTick_Handler
-                0x08000f14        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08000f14                SysTick_Handler
- *fill*         0x08000f16        0x2 
+                0x08001328        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x08001328                SysTick_Handler
+ *fill*         0x0800132a        0x2 
  .text.FDCAN1_IT0_IRQHandler
-                0x08000f18       0x10 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08000f18                FDCAN1_IT0_IRQHandler
+                0x0800132c       0x10 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x0800132c                FDCAN1_IT0_IRQHandler
  .text.TIM1_UP_TIM16_IRQHandler
-                0x08000f28       0x10 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08000f28                TIM1_UP_TIM16_IRQHandler
+                0x0800133c       0x10 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x0800133c                TIM1_UP_TIM16_IRQHandler
  .text.TIM2_IRQHandler
-                0x08000f38       0x10 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                0x08000f38                TIM2_IRQHandler
+                0x0800134c       0x10 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x0800134c                TIM2_IRQHandler
+ .text.USART1_IRQHandler
+                0x0800135c       0x10 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x0800135c                USART1_IRQHandler
  .text.SystemInit
-                0x08000f48        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
-                0x08000f48                SystemInit
- *fill*         0x08000f4a        0x2 
+                0x0800136c        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
+                0x0800136c                SystemInit
+ *fill*         0x0800136e        0x2 
  .text.Reset_Handler
-                0x08000f4c       0x50 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj
-                0x08000f4c                Reset_Handler
+                0x08001370       0x50 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj
+                0x08001370                Reset_Handler
  .text.Default_Handler
-                0x08000f9c        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj
-                0x08000f9c                RTC_Alarm_IRQHandler
-                0x08000f9c                EXTI2_IRQHandler
-                0x08000f9c                TIM8_TRG_COM_IRQHandler
-                0x08000f9c                TIM8_CC_IRQHandler
-                0x08000f9c                HRTIM1_Master_IRQHandler
-                0x08000f9c                SPI4_IRQHandler
-                0x08000f9c                FDCAN3_IT0_IRQHandler
-                0x08000f9c                TIM1_CC_IRQHandler
-                0x08000f9c                HRTIM1_FLT_IRQHandler
-                0x08000f9c                HRTIM1_TIMF_IRQHandler
-                0x08000f9c                USB_HP_IRQHandler
-                0x08000f9c                CORDIC_IRQHandler
-                0x08000f9c                HRTIM1_TIMD_IRQHandler
-                0x08000f9c                DMA2_Channel8_IRQHandler
-                0x08000f9c                EXTI3_IRQHandler
-                0x08000f9c                I2C3_ER_IRQHandler
-                0x08000f9c                EXTI0_IRQHandler
-                0x08000f9c                I2C2_EV_IRQHandler
-                0x08000f9c                FPU_IRQHandler
-                0x08000f9c                FDCAN1_IT1_IRQHandler
-                0x08000f9c                ADC1_2_IRQHandler
-                0x08000f9c                HRTIM1_TIME_IRQHandler
-                0x08000f9c                SPI1_IRQHandler
-                0x08000f9c                TIM6_DAC_IRQHandler
-                0x08000f9c                HRTIM1_TIMC_IRQHandler
-                0x08000f9c                TIM8_UP_IRQHandler
-                0x08000f9c                DMA2_Channel2_IRQHandler
-                0x08000f9c                DMA1_Channel4_IRQHandler
-                0x08000f9c                TIM20_TRG_COM_IRQHandler
-                0x08000f9c                USART3_IRQHandler
-                0x08000f9c                DMA1_Channel7_IRQHandler
-                0x08000f9c                UART5_IRQHandler
-                0x08000f9c                ADC3_IRQHandler
-                0x08000f9c                TIM4_IRQHandler
-                0x08000f9c                DMA2_Channel1_IRQHandler
-                0x08000f9c                QUADSPI_IRQHandler
-                0x08000f9c                I2C1_EV_IRQHandler
-                0x08000f9c                DMA1_Channel6_IRQHandler
-                0x08000f9c                UART4_IRQHandler
-                0x08000f9c                DMA2_Channel4_IRQHandler
-                0x08000f9c                TIM3_IRQHandler
-                0x08000f9c                RCC_IRQHandler
-                0x08000f9c                TIM20_UP_IRQHandler
-                0x08000f9c                DMA1_Channel1_IRQHandler
-                0x08000f9c                Default_Handler
-                0x08000f9c                DMA2_Channel7_IRQHandler
-                0x08000f9c                RTC_TAMP_LSECSS_IRQHandler
-                0x08000f9c                FMAC_IRQHandler
-                0x08000f9c                EXTI15_10_IRQHandler
-                0x08000f9c                DMA1_Channel8_IRQHandler
-                0x08000f9c                HRTIM1_TIMA_IRQHandler
-                0x08000f9c                TIM7_DAC_IRQHandler
-                0x08000f9c                FDCAN3_IT1_IRQHandler
-                0x08000f9c                TIM5_IRQHandler
-                0x08000f9c                UCPD1_IRQHandler
-                0x08000f9c                I2C3_EV_IRQHandler
-                0x08000f9c                EXTI9_5_IRQHandler
-                0x08000f9c                RTC_WKUP_IRQHandler
-                0x08000f9c                PVD_PVM_IRQHandler
-                0x08000f9c                SPI2_IRQHandler
-                0x08000f9c                ADC5_IRQHandler
-                0x08000f9c                DMA2_Channel5_IRQHandler
-                0x08000f9c                CRS_IRQHandler
-                0x08000f9c                DMA1_Channel5_IRQHandler
-                0x08000f9c                USB_LP_IRQHandler
-                0x08000f9c                EXTI4_IRQHandler
-                0x08000f9c                RNG_IRQHandler
-                0x08000f9c                HRTIM1_TIMB_IRQHandler
-                0x08000f9c                TIM1_TRG_COM_TIM17_IRQHandler
-                0x08000f9c                FDCAN2_IT1_IRQHandler
-                0x08000f9c                DMA1_Channel3_IRQHandler
-                0x08000f9c                ADC4_IRQHandler
-                0x08000f9c                WWDG_IRQHandler
-                0x08000f9c                I2C4_EV_IRQHandler
-                0x08000f9c                FDCAN2_IT0_IRQHandler
-                0x08000f9c                LPUART1_IRQHandler
-                0x08000f9c                DMA2_Channel6_IRQHandler
-                0x08000f9c                COMP7_IRQHandler
-                0x08000f9c                COMP1_2_3_IRQHandler
-                0x08000f9c                EXTI1_IRQHandler
-                0x08000f9c                USART2_IRQHandler
-                0x08000f9c                COMP4_5_6_IRQHandler
-                0x08000f9c                TIM20_BRK_IRQHandler
-                0x08000f9c                I2C2_ER_IRQHandler
-                0x08000f9c                DMA1_Channel2_IRQHandler
-                0x08000f9c                TIM8_BRK_IRQHandler
-                0x08000f9c                FLASH_IRQHandler
-                0x08000f9c                TIM20_CC_IRQHandler
-                0x08000f9c                USART1_IRQHandler
-                0x08000f9c                SPI3_IRQHandler
-                0x08000f9c                I2C1_ER_IRQHandler
-                0x08000f9c                FMC_IRQHandler
-                0x08000f9c                LPTIM1_IRQHandler
-                0x08000f9c                DMAMUX_OVR_IRQHandler
-                0x08000f9c                I2C4_ER_IRQHandler
-                0x08000f9c                USBWakeUp_IRQHandler
-                0x08000f9c                SAI1_IRQHandler
-                0x08000f9c                DMA2_Channel3_IRQHandler
-                0x08000f9c                TIM1_BRK_TIM15_IRQHandler
+                0x080013c0        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj
+                0x080013c0                RTC_Alarm_IRQHandler
+                0x080013c0                EXTI2_IRQHandler
+                0x080013c0                TIM8_TRG_COM_IRQHandler
+                0x080013c0                TIM8_CC_IRQHandler
+                0x080013c0                HRTIM1_Master_IRQHandler
+                0x080013c0                SPI4_IRQHandler
+                0x080013c0                FDCAN3_IT0_IRQHandler
+                0x080013c0                TIM1_CC_IRQHandler
+                0x080013c0                HRTIM1_FLT_IRQHandler
+                0x080013c0                HRTIM1_TIMF_IRQHandler
+                0x080013c0                USB_HP_IRQHandler
+                0x080013c0                CORDIC_IRQHandler
+                0x080013c0                HRTIM1_TIMD_IRQHandler
+                0x080013c0                DMA2_Channel8_IRQHandler
+                0x080013c0                EXTI3_IRQHandler
+                0x080013c0                I2C3_ER_IRQHandler
+                0x080013c0                EXTI0_IRQHandler
+                0x080013c0                I2C2_EV_IRQHandler
+                0x080013c0                FPU_IRQHandler
+                0x080013c0                FDCAN1_IT1_IRQHandler
+                0x080013c0                ADC1_2_IRQHandler
+                0x080013c0                HRTIM1_TIME_IRQHandler
+                0x080013c0                SPI1_IRQHandler
+                0x080013c0                TIM6_DAC_IRQHandler
+                0x080013c0                HRTIM1_TIMC_IRQHandler
+                0x080013c0                TIM8_UP_IRQHandler
+                0x080013c0                DMA2_Channel2_IRQHandler
+                0x080013c0                DMA1_Channel4_IRQHandler
+                0x080013c0                TIM20_TRG_COM_IRQHandler
+                0x080013c0                USART3_IRQHandler
+                0x080013c0                DMA1_Channel7_IRQHandler
+                0x080013c0                UART5_IRQHandler
+                0x080013c0                ADC3_IRQHandler
+                0x080013c0                TIM4_IRQHandler
+                0x080013c0                DMA2_Channel1_IRQHandler
+                0x080013c0                QUADSPI_IRQHandler
+                0x080013c0                I2C1_EV_IRQHandler
+                0x080013c0                DMA1_Channel6_IRQHandler
+                0x080013c0                UART4_IRQHandler
+                0x080013c0                DMA2_Channel4_IRQHandler
+                0x080013c0                TIM3_IRQHandler
+                0x080013c0                RCC_IRQHandler
+                0x080013c0                TIM20_UP_IRQHandler
+                0x080013c0                DMA1_Channel1_IRQHandler
+                0x080013c0                Default_Handler
+                0x080013c0                DMA2_Channel7_IRQHandler
+                0x080013c0                RTC_TAMP_LSECSS_IRQHandler
+                0x080013c0                FMAC_IRQHandler
+                0x080013c0                EXTI15_10_IRQHandler
+                0x080013c0                DMA1_Channel8_IRQHandler
+                0x080013c0                HRTIM1_TIMA_IRQHandler
+                0x080013c0                TIM7_DAC_IRQHandler
+                0x080013c0                FDCAN3_IT1_IRQHandler
+                0x080013c0                TIM5_IRQHandler
+                0x080013c0                UCPD1_IRQHandler
+                0x080013c0                I2C3_EV_IRQHandler
+                0x080013c0                EXTI9_5_IRQHandler
+                0x080013c0                RTC_WKUP_IRQHandler
+                0x080013c0                PVD_PVM_IRQHandler
+                0x080013c0                SPI2_IRQHandler
+                0x080013c0                ADC5_IRQHandler
+                0x080013c0                DMA2_Channel5_IRQHandler
+                0x080013c0                CRS_IRQHandler
+                0x080013c0                DMA1_Channel5_IRQHandler
+                0x080013c0                USB_LP_IRQHandler
+                0x080013c0                EXTI4_IRQHandler
+                0x080013c0                RNG_IRQHandler
+                0x080013c0                HRTIM1_TIMB_IRQHandler
+                0x080013c0                TIM1_TRG_COM_TIM17_IRQHandler
+                0x080013c0                FDCAN2_IT1_IRQHandler
+                0x080013c0                DMA1_Channel3_IRQHandler
+                0x080013c0                ADC4_IRQHandler
+                0x080013c0                WWDG_IRQHandler
+                0x080013c0                I2C4_EV_IRQHandler
+                0x080013c0                FDCAN2_IT0_IRQHandler
+                0x080013c0                LPUART1_IRQHandler
+                0x080013c0                DMA2_Channel6_IRQHandler
+                0x080013c0                COMP7_IRQHandler
+                0x080013c0                COMP1_2_3_IRQHandler
+                0x080013c0                EXTI1_IRQHandler
+                0x080013c0                USART2_IRQHandler
+                0x080013c0                COMP4_5_6_IRQHandler
+                0x080013c0                TIM20_BRK_IRQHandler
+                0x080013c0                I2C2_ER_IRQHandler
+                0x080013c0                DMA1_Channel2_IRQHandler
+                0x080013c0                TIM8_BRK_IRQHandler
+                0x080013c0                FLASH_IRQHandler
+                0x080013c0                TIM20_CC_IRQHandler
+                0x080013c0                SPI3_IRQHandler
+                0x080013c0                I2C1_ER_IRQHandler
+                0x080013c0                FMC_IRQHandler
+                0x080013c0                LPTIM1_IRQHandler
+                0x080013c0                DMAMUX_OVR_IRQHandler
+                0x080013c0                I2C4_ER_IRQHandler
+                0x080013c0                USBWakeUp_IRQHandler
+                0x080013c0                SAI1_IRQHandler
+                0x080013c0                DMA2_Channel3_IRQHandler
+                0x080013c0                TIM1_BRK_TIM15_IRQHandler
  .text.HAL_Init
-                0x08000f9e       0x1e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
-                0x08000f9e                HAL_Init
+                0x080013c2       0x1e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+                0x080013c2                HAL_Init
  .text.HAL_IncTick
-                0x08000fbc       0x18 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
-                0x08000fbc                HAL_IncTick
+                0x080013e0       0x18 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+                0x080013e0                HAL_IncTick
  .text.HAL_GetTick
-                0x08000fd4        0xc CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
-                0x08000fd4                HAL_GetTick
+                0x080013f8        0xc CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+                0x080013f8                HAL_GetTick
  .text.HAL_Delay
-                0x08000fe0       0x28 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
-                0x08000fe0                HAL_Delay
+                0x08001404       0x28 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+                0x08001404                HAL_Delay
  .text.HAL_NVIC_SetPriorityGrouping
-                0x08001008       0x24 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
-                0x08001008                HAL_NVIC_SetPriorityGrouping
+                0x0800142c       0x24 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+                0x0800142c                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x0800102c       0x70 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
-                0x0800102c                HAL_NVIC_SetPriority
+                0x08001450       0x70 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+                0x08001450                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x0800109c       0x1c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
-                0x0800109c                HAL_NVIC_EnableIRQ
+                0x080014c0       0x1c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+                0x080014c0                HAL_NVIC_EnableIRQ
+ .text.HAL_DMA_Abort
+                0x080014dc       0x6c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+                0x080014dc                HAL_DMA_Abort
+ .text.HAL_DMA_Abort_IT
+                0x08001548       0x7e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+                0x08001548                HAL_DMA_Abort_IT
+ *fill*         0x080015c6        0x2 
  .text.FDCAN_CalcultateRamBlockAddresses
-                0x080010b8       0x88 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x080015c8       0x88 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
  .text.FDCAN_CopyMessageToRAM
-                0x08001140       0x88 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08001650       0x88 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
  .text.HAL_FDCAN_Init
-                0x080011c8      0x1d4 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x080011c8                HAL_FDCAN_Init
+                0x080016d8      0x1d4 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x080016d8                HAL_FDCAN_Init
  .text.HAL_FDCAN_ConfigFilter
-                0x0800139c       0x60 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x0800139c                HAL_FDCAN_ConfigFilter
+                0x080018ac       0x60 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x080018ac                HAL_FDCAN_ConfigFilter
  .text.HAL_FDCAN_Start
-                0x080013fc       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x080013fc                HAL_FDCAN_Start
+                0x0800190c       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x0800190c                HAL_FDCAN_Start
  .text.HAL_FDCAN_AddMessageToTxFifoQ
-                0x0800142a       0x52 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x0800142a                HAL_FDCAN_AddMessageToTxFifoQ
+                0x0800193a       0x52 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x0800193a                HAL_FDCAN_AddMessageToTxFifoQ
  .text.HAL_FDCAN_GetRxMessage
-                0x0800147c      0x164 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x0800147c                HAL_FDCAN_GetRxMessage
+                0x0800198c      0x164 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x0800198c                HAL_FDCAN_GetRxMessage
  .text.HAL_FDCAN_ActivateNotification
-                0x080015e0      0x106 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x080015e0                HAL_FDCAN_ActivateNotification
+                0x08001af0      0x106 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08001af0                HAL_FDCAN_ActivateNotification
  .text.HAL_FDCAN_TxEventFifoCallback
-                0x080016e6        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x080016e6                HAL_FDCAN_TxEventFifoCallback
+                0x08001bf6        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08001bf6                HAL_FDCAN_TxEventFifoCallback
  .text.HAL_FDCAN_RxFifo1Callback
-                0x080016e8        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x080016e8                HAL_FDCAN_RxFifo1Callback
+                0x08001bf8        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08001bf8                HAL_FDCAN_RxFifo1Callback
  .text.HAL_FDCAN_TxFifoEmptyCallback
-                0x080016ea        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x080016ea                HAL_FDCAN_TxFifoEmptyCallback
+                0x08001bfa        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08001bfa                HAL_FDCAN_TxFifoEmptyCallback
  .text.HAL_FDCAN_TxBufferCompleteCallback
-                0x080016ec        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x080016ec                HAL_FDCAN_TxBufferCompleteCallback
+                0x08001bfc        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08001bfc                HAL_FDCAN_TxBufferCompleteCallback
  .text.HAL_FDCAN_TxBufferAbortCallback
-                0x080016ee        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x080016ee                HAL_FDCAN_TxBufferAbortCallback
+                0x08001bfe        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08001bfe                HAL_FDCAN_TxBufferAbortCallback
  .text.HAL_FDCAN_TimestampWraparoundCallback
-                0x080016f0        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x080016f0                HAL_FDCAN_TimestampWraparoundCallback
+                0x08001c00        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08001c00                HAL_FDCAN_TimestampWraparoundCallback
  .text.HAL_FDCAN_TimeoutOccurredCallback
-                0x080016f2        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x080016f2                HAL_FDCAN_TimeoutOccurredCallback
+                0x08001c02        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08001c02                HAL_FDCAN_TimeoutOccurredCallback
  .text.HAL_FDCAN_HighPriorityMessageCallback
-                0x080016f4        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x080016f4                HAL_FDCAN_HighPriorityMessageCallback
+                0x08001c04        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08001c04                HAL_FDCAN_HighPriorityMessageCallback
  .text.HAL_FDCAN_ErrorCallback
-                0x080016f6        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x080016f6                HAL_FDCAN_ErrorCallback
+                0x08001c06        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08001c06                HAL_FDCAN_ErrorCallback
  .text.HAL_FDCAN_ErrorStatusCallback
-                0x080016f8        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x080016f8                HAL_FDCAN_ErrorStatusCallback
+                0x08001c08        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08001c08                HAL_FDCAN_ErrorStatusCallback
  .text.HAL_FDCAN_IRQHandler
-                0x080016fa      0x188 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
-                0x080016fa                HAL_FDCAN_IRQHandler
- *fill*         0x08001882        0x2 
+                0x08001c0a      0x188 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08001c0a                HAL_FDCAN_IRQHandler
+ *fill*         0x08001d92        0x2 
  .text.HAL_GPIO_Init
-                0x08001884      0x1dc CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
-                0x08001884                HAL_GPIO_Init
+                0x08001d94      0x1dc CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+                0x08001d94                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x08001a60        0xa CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
-                0x08001a60                HAL_GPIO_WritePin
+                0x08001f70        0xa CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+                0x08001f70                HAL_GPIO_WritePin
  .text.HAL_GPIO_TogglePin
-                0x08001a6a       0x12 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
-                0x08001a6a                HAL_GPIO_TogglePin
+                0x08001f7a       0x12 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+                0x08001f7a                HAL_GPIO_TogglePin
  .text.HAL_PWREx_ControlVoltageScaling
-                0x08001a7c      0x10c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
-                0x08001a7c                HAL_PWREx_ControlVoltageScaling
+                0x08001f8c      0x10c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+                0x08001f8c                HAL_PWREx_ControlVoltageScaling
  .text.HAL_PWREx_DisableUCPDDeadBattery
-                0x08001b88       0x10 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
-                0x08001b88                HAL_PWREx_DisableUCPDDeadBattery
+                0x08002098       0x10 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+                0x08002098                HAL_PWREx_DisableUCPDDeadBattery
  .text.RCC_GetSysClockFreqFromPLLSource
-                0x08001b98       0x58 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x080020a8       0x58 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
  .text.HAL_RCC_OscConfig
-                0x08001bf0      0x4e4 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
-                0x08001bf0                HAL_RCC_OscConfig
+                0x08002100      0x4e4 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x08002100                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x080020d4       0x88 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
-                0x080020d4                HAL_RCC_GetSysClockFreq
+                0x080025e4       0x88 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x080025e4                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x0800215c      0x1f8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
-                0x0800215c                HAL_RCC_ClockConfig
+                0x0800266c      0x1f8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x0800266c                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x08002354        0xc CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
-                0x08002354                HAL_RCC_GetHCLKFreq
+                0x08002864        0xc CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x08002864                HAL_RCC_GetHCLKFreq
+ .text.HAL_RCC_GetPCLK1Freq
+                0x08002870       0x24 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x08002870                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x08002360       0x24 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
-                0x08002360                HAL_RCC_GetPCLK2Freq
+                0x08002894       0x24 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x08002894                HAL_RCC_GetPCLK2Freq
  .text.HAL_RCC_GetClockConfig
-                0x08002384       0x3c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
-                0x08002384                HAL_RCC_GetClockConfig
+                0x080028b8       0x3c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x080028b8                HAL_RCC_GetClockConfig
  .text.HAL_RCCEx_PeriphCLKConfig
-                0x080023c0      0x378 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
-                0x080023c0                HAL_RCCEx_PeriphCLKConfig
+                0x080028f4      0x378 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+                0x080028f4                HAL_RCCEx_PeriphCLKConfig
  .text.TIM_TI1_ConfigInputStage
-                0x08002738       0x24 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x08002c6c       0x24 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
  .text.TIM_TI2_ConfigInputStage
-                0x0800275c       0x26 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x08002c90       0x26 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
  .text.TIM_ITRx_SetConfig
-                0x08002782       0x14 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
- *fill*         0x08002796        0x2 
+                0x08002cb6       0x14 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+ *fill*         0x08002cca        0x2 
  .text.HAL_TIM_Base_Start_IT
-                0x08002798       0x94 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x08002798                HAL_TIM_Base_Start_IT
+                0x08002ccc       0x94 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x08002ccc                HAL_TIM_Base_Start_IT
  .text.HAL_TIM_OC_DelayElapsedCallback
-                0x0800282c        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x0800282c                HAL_TIM_OC_DelayElapsedCallback
+                0x08002d60        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x08002d60                HAL_TIM_OC_DelayElapsedCallback
  .text.HAL_TIM_IC_CaptureCallback
-                0x0800282e        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x0800282e                HAL_TIM_IC_CaptureCallback
+                0x08002d62        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x08002d62                HAL_TIM_IC_CaptureCallback
  .text.HAL_TIM_PWM_PulseFinishedCallback
-                0x08002830        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x08002830                HAL_TIM_PWM_PulseFinishedCallback
+                0x08002d64        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x08002d64                HAL_TIM_PWM_PulseFinishedCallback
  .text.HAL_TIM_TriggerCallback
-                0x08002832        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x08002832                HAL_TIM_TriggerCallback
+                0x08002d66        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x08002d66                HAL_TIM_TriggerCallback
  .text.HAL_TIM_IRQHandler
-                0x08002834      0x1ea CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x08002834                HAL_TIM_IRQHandler
- *fill*         0x08002a1e        0x2 
+                0x08002d68      0x1ea CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x08002d68                HAL_TIM_IRQHandler
+ *fill*         0x08002f52        0x2 
  .text.TIM_Base_SetConfig
-                0x08002a20       0xf0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x08002a20                TIM_Base_SetConfig
+                0x08002f54       0xf0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x08002f54                TIM_Base_SetConfig
  .text.HAL_TIM_Base_Init
-                0x08002b10       0x60 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x08002b10                HAL_TIM_Base_Init
+                0x08003044       0x60 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x08003044                HAL_TIM_Base_Init
  .text.TIM_ETR_SetConfig
-                0x08002b70       0x18 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x08002b70                TIM_ETR_SetConfig
+                0x080030a4       0x18 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x080030a4                TIM_ETR_SetConfig
  .text.HAL_TIM_ConfigClockSource
-                0x08002b88      0x154 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
-                0x08002b88                HAL_TIM_ConfigClockSource
+                0x080030bc      0x154 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x080030bc                HAL_TIM_ConfigClockSource
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x08002cdc       0xac CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
-                0x08002cdc                HAL_TIMEx_MasterConfigSynchronization
+                0x08003210       0xac CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x08003210                HAL_TIMEx_MasterConfigSynchronization
  .text.HAL_TIMEx_CommutCallback
-                0x08002d88        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
-                0x08002d88                HAL_TIMEx_CommutCallback
+                0x080032bc        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x080032bc                HAL_TIMEx_CommutCallback
  .text.HAL_TIMEx_BreakCallback
-                0x08002d8a        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
-                0x08002d8a                HAL_TIMEx_BreakCallback
+                0x080032be        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x080032be                HAL_TIMEx_BreakCallback
  .text.HAL_TIMEx_Break2Callback
-                0x08002d8c        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
-                0x08002d8c                HAL_TIMEx_Break2Callback
+                0x080032c0        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x080032c0                HAL_TIMEx_Break2Callback
  .text.HAL_TIMEx_EncoderIndexCallback
-                0x08002d8e        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
-                0x08002d8e                HAL_TIMEx_EncoderIndexCallback
+                0x080032c2        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x080032c2                HAL_TIMEx_EncoderIndexCallback
  .text.HAL_TIMEx_DirectionChangeCallback
-                0x08002d90        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
-                0x08002d90                HAL_TIMEx_DirectionChangeCallback
+                0x080032c4        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x080032c4                HAL_TIMEx_DirectionChangeCallback
  .text.HAL_TIMEx_IndexErrorCallback
-                0x08002d92        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
-                0x08002d92                HAL_TIMEx_IndexErrorCallback
+                0x080032c6        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x080032c6                HAL_TIMEx_IndexErrorCallback
  .text.HAL_TIMEx_TransitionErrorCallback
-                0x08002d94        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
-                0x08002d94                HAL_TIMEx_TransitionErrorCallback
- *fill*         0x08002d96        0x2 
+                0x080032c8        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x080032c8                HAL_TIMEx_TransitionErrorCallback
+ .text.UART_EndRxTransfer
+                0x080032ca       0x56 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_TxCpltCallback
+                0x08003320        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08003320                HAL_UART_TxCpltCallback
+ .text.UART_EndTransmit_IT
+                0x08003322       0x24 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UART_ErrorCallback
+                0x08003346        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08003346                HAL_UART_ErrorCallback
+ .text.UART_DMAAbortOnError
+                0x08003348       0x14 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .text.HAL_UARTEx_RxEventCallback
+                0x0800335c        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x0800335c                HAL_UARTEx_RxEventCallback
+ *fill*         0x0800335e        0x2 
+ .text.HAL_UART_IRQHandler
+                0x08003360      0x348 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08003360                HAL_UART_IRQHandler
+ .text.UART_SetConfig
+                0x080036a8      0x388 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x080036a8                UART_SetConfig
+ .text.UART_AdvFeatureConfig
+                0x08003a30       0xca CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08003a30                UART_AdvFeatureConfig
+ .text.UART_WaitOnFlagUntilTimeout
+                0x08003afa       0xa2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08003afa                UART_WaitOnFlagUntilTimeout
+ .text.UART_CheckIdleState
+                0x08003b9c       0xca CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08003b9c                UART_CheckIdleState
+ .text.HAL_UART_Init
+                0x08003c66       0x66 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08003c66                HAL_UART_Init
+ .text.UARTEx_SetNbDataToProcess
+                0x08003ccc       0x4c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+ .text.HAL_UARTEx_WakeupCallback
+                0x08003d18        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+                0x08003d18                HAL_UARTEx_WakeupCallback
+ .text.HAL_UARTEx_RxFifoFullCallback
+                0x08003d1a        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+                0x08003d1a                HAL_UARTEx_RxFifoFullCallback
+ .text.HAL_UARTEx_TxFifoEmptyCallback
+                0x08003d1c        0x2 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+                0x08003d1c                HAL_UARTEx_TxFifoEmptyCallback
+ .text.HAL_UARTEx_DisableFifoMode
+                0x08003d1e       0x3e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+                0x08003d1e                HAL_UARTEx_DisableFifoMode
+ .text.HAL_UARTEx_SetTxFifoThreshold
+                0x08003d5c       0x4a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+                0x08003d5c                HAL_UARTEx_SetTxFifoThreshold
+ .text.HAL_UARTEx_SetRxFifoThreshold
+                0x08003da6       0x4a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+                0x08003da6                HAL_UARTEx_SetRxFifoThreshold
  .text.__libc_init_array
-                0x08002d98       0x48 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-init.o)
-                0x08002d98                __libc_init_array
- .text.memset   0x08002de0       0xa4 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memset.o)
-                0x08002de0                memset
+                0x08003df0       0x48 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-init.o)
+                0x08003df0                __libc_init_array
+ .text.memset   0x08003e38       0xa4 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memset.o)
+                0x08003e38                memset
  .text.startup.register_fini
-                0x08002e84       0x14 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
- .text.atexit   0x08002e98        0xc d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-atexit.o)
-                0x08002e98                atexit
+                0x08003edc       0x14 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
+ .text.atexit   0x08003ef0        0xc d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-atexit.o)
+                0x08003ef0                atexit
  .text.__libc_fini_array
-                0x08002ea4       0x2c d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fini.o)
-                0x08002ea4                __libc_fini_array
+                0x08003efc       0x2c d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fini.o)
+                0x08003efc                __libc_fini_array
  .text.__retarget_lock_acquire_recursive
-                0x08002ed0        0x4 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
-                0x08002ed0                __retarget_lock_acquire_recursive
+                0x08003f28        0x4 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
+                0x08003f28                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x08002ed4        0x4 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
-                0x08002ed4                __retarget_lock_release_recursive
+                0x08003f2c        0x4 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
+                0x08003f2c                __retarget_lock_release_recursive
  .text.__register_exitproc
-                0x08002ed8       0x8c d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__atexit.o)
-                0x08002ed8                __register_exitproc
+                0x08003f30       0x8c d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__atexit.o)
+                0x08003f30                __register_exitproc
  *(.glue_7)
- .glue_7        0x08002f64        0x0 linker stubs
+ .glue_7        0x08003fbc        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08002f64        0x0 linker stubs
+ .glue_7t       0x08003fbc        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08002f64        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+ .eh_frame      0x08003fbc        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
  *(.init)
- .init          0x08002f64        0x4 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
-                0x08002f64                _init
- .init          0x08002f68        0x8 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
+ .init          0x08003fbc        0x4 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
+                0x08003fbc                _init
+ .init          0x08003fc0        0x8 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
  *(.fini)
- .fini          0x08002f70        0x4 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
-                0x08002f70                _fini
- .fini          0x08002f74        0x8 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
-                0x08002f7c                . = ALIGN (0x4)
-                0x08002f7c                _etext = .
+ .fini          0x08003fc8        0x4 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
+                0x08003fc8                _fini
+ .fini          0x08003fcc        0x8 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
+                0x08003fd4                . = ALIGN (0x4)
+                0x08003fd4                _etext = .
 
-.vfp11_veneer   0x08002f7c        0x0
- .vfp11_veneer  0x08002f7c        0x0 linker stubs
+.vfp11_veneer   0x08003fd4        0x0
+ .vfp11_veneer  0x08003fd4        0x0 linker stubs
 
-.v4_bx          0x08002f7c        0x0
- .v4_bx         0x08002f7c        0x0 linker stubs
+.v4_bx          0x08003fd4        0x0
+ .v4_bx         0x08003fd4        0x0 linker stubs
 
-.iplt           0x08002f7c        0x0
- .iplt          0x08002f7c        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+.iplt           0x08003fd4        0x0
+ .iplt          0x08003fd4        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
 
-.rodata         0x08002f7c       0x2c
-                0x08002f7c                . = ALIGN (0x4)
+.rodata         0x08003fd4       0x54
+                0x08003fd4                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.AHBPrescTable
-                0x08002f7c       0x10 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
-                0x08002f7c                AHBPrescTable
+                0x08003fd4       0x10 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
+                0x08003fd4                AHBPrescTable
  .rodata.APBPrescTable
-                0x08002f8c        0x8 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
-                0x08002f8c                APBPrescTable
+                0x08003fe4        0x8 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
+                0x08003fe4                APBPrescTable
  .rodata.DLCtoBytes
-                0x08002f94       0x10 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x08003fec       0x10 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+ .rodata.UARTPrescTable
+                0x08003ffc       0x18 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                0x08003ffc                UARTPrescTable
+ .rodata.denominator.0
+                0x08004014        0x8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+ .rodata.numerator.1
+                0x0800401c        0x8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
  .rodata._global_impure_ptr
-                0x08002fa4        0x4 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-impure.o)
-                0x08002fa4                _global_impure_ptr
-                0x08002fa8                . = ALIGN (0x4)
+                0x08004024        0x4 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-impure.o)
+                0x08004024                _global_impure_ptr
+                0x08004028                . = ALIGN (0x4)
 
-.rel.dyn        0x08002fa8        0x0
- .rel.iplt      0x08002fa8        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
-
-.ARM.extab      0x08002fa8        0x0
-                0x08002fa8                . = ALIGN (0x4)
+.ARM.extab      0x08004028        0x0
+                0x08004028                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08002fa8                . = ALIGN (0x4)
+                0x08004028                . = ALIGN (0x4)
 
-.ARM            0x08002fa8        0x0
-                0x08002fa8                . = ALIGN (0x4)
-                0x08002fa8                __exidx_start = .
+.ARM            0x08004028        0x8
+                0x08004028                . = ALIGN (0x4)
+                0x08004028                __exidx_start = .
  *(.ARM.exidx*)
-                0x08002fa8                __exidx_end = .
-                0x08002fa8                . = ALIGN (0x4)
+ .ARM.exidx     0x08004028        0x8 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x08004030                __exidx_end = .
+                0x08004030                . = ALIGN (0x4)
 
-.preinit_array  0x08002fa8        0x0
-                0x08002fa8                . = ALIGN (0x4)
-                0x08002fa8                PROVIDE (__preinit_array_start = .)
+.rel.dyn        0x08004030        0x0
+ .rel.iplt      0x08004030        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+
+.preinit_array  0x08004030        0x0
+                0x08004030                . = ALIGN (0x4)
+                0x08004030                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08002fa8                PROVIDE (__preinit_array_end = .)
-                0x08002fa8                . = ALIGN (0x4)
+                0x08004030                PROVIDE (__preinit_array_end = .)
+                0x08004030                . = ALIGN (0x4)
 
-.init_array     0x08002fa8        0x8
-                0x08002fa8                . = ALIGN (0x4)
-                0x08002fa8                PROVIDE (__init_array_start = .)
+.init_array     0x08004030        0x8
+                0x08004030                . = ALIGN (0x4)
+                0x08004030                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x08002fa8        0x4 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
+                0x08004030        0x4 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x08002fac        0x4 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
-                0x08002fb0                PROVIDE (__init_array_end = .)
-                0x08002fb0                . = ALIGN (0x4)
+ .init_array    0x08004034        0x4 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+                0x08004038                PROVIDE (__init_array_end = .)
+                0x08004038                . = ALIGN (0x4)
 
-.fini_array     0x08002fb0        0x4
-                0x08002fb0                . = ALIGN (0x4)
-                0x08002fb0                PROVIDE (__fini_array_start = .)
+.fini_array     0x08004038        0x4
+                0x08004038                . = ALIGN (0x4)
+                0x08004038                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08002fb0        0x4 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
-                0x08002fb4                PROVIDE (__fini_array_end = .)
-                0x08002fb4                . = ALIGN (0x4)
-                0x08002fb4                _sidata = LOADADDR (.data)
+ .fini_array    0x08004038        0x4 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+                0x0800403c                PROVIDE (__fini_array_end = .)
+                0x0800403c                . = ALIGN (0x4)
+                0x0800403c                _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x43c load address 0x08002fb4
+.data           0x20000000      0x43c load address 0x0800403c
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -1811,11 +2039,11 @@ LOAD d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-
                 0x2000043c                . = ALIGN (0x4)
                 0x2000043c                _edata = .
 
-.igot.plt       0x2000043c        0x0 load address 0x080033f0
+.igot.plt       0x2000043c        0x0 load address 0x08004478
  .igot.plt      0x2000043c        0x0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
                 0x2000043c                . = ALIGN (0x4)
 
-.bss            0x2000043c      0x17c load address 0x080033f0
+.bss            0x2000043c      0x210 load address 0x08004478
                 0x2000043c                _sbss = .
                 0x2000043c                __bss_start__ = _sbss
  *(.bss)
@@ -1830,38 +2058,41 @@ LOAD d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-
                 0x200004a4                hfdcan1
  .bss.htim2     0x20000508       0x4c CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
                 0x20000508                htim2
+ .bss.huart1    0x20000554       0x94 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+                0x20000554                huart1
  .bss.led_counter.0
-                0x20000554        0x4 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+                0x200005e8        0x4 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
  .bss.system_counter.1
-                0x20000558        0x4 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+                0x200005ec        0x4 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
  .bss.test_counter
-                0x2000055c        0x4 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
+                0x200005f0        0x4 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
  .bss.test_phase.0
-                0x20000560        0x1 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
- *fill*         0x20000561        0x3 
- .bss.htim1     0x20000564       0x4c CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
-                0x20000564                htim1
- .bss.uwTick    0x200005b0        0x4 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
-                0x200005b0                uwTick
+                0x200005f4        0x1 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
+ *fill*         0x200005f5        0x3 
+ .bss.htim1     0x200005f8       0x4c CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
+                0x200005f8                htim1
+ .bss.uwTick    0x20000644        0x4 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+                0x20000644                uwTick
  .bss.__lock___atexit_recursive_mutex
-                0x200005b4        0x1 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
-                0x200005b4                __lock___atexit_recursive_mutex
+                0x20000648        0x1 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
+                0x20000648                __lock___atexit_recursive_mutex
  *(COMMON)
-                0x200005b8                . = ALIGN (0x4)
- *fill*         0x200005b5        0x3 
-                0x200005b8                _ebss = .
-                0x200005b8                __bss_end__ = _ebss
+                0x2000064c                . = ALIGN (0x4)
+ *fill*         0x20000649        0x3 
+                0x2000064c                _ebss = .
+                0x2000064c                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x200005b8      0x600 load address 0x080033f0
-                0x200005b8                . = ALIGN (0x8)
+                0x2000064c      0x604 load address 0x08004478
+                0x20000650                . = ALIGN (0x8)
+ *fill*         0x2000064c        0x4 
                 [!provide]                PROVIDE (end = .)
-                0x200005b8                PROVIDE (_end = .)
-                0x200007b8                . = (. + _Min_Heap_Size)
- *fill*         0x200005b8      0x200 
-                0x20000bb8                . = (. + _Min_Stack_Size)
- *fill*         0x200007b8      0x400 
-                0x20000bb8                . = ALIGN (0x8)
+                0x20000650                PROVIDE (_end = .)
+                0x20000850                . = (. + _Min_Heap_Size)
+ *fill*         0x20000650      0x200 
+                0x20000c50                . = (. + _Min_Stack_Size)
+ *fill*         0x20000850      0x400 
+                0x20000c50                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -1900,232 +2131,271 @@ LOAD d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-
  .ARM.attributes
                 0x00000239       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
  .ARM.attributes
-                0x00000267       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x00000267       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
  .ARM.attributes
-                0x00000295       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+                0x00000295       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
  .ARM.attributes
-                0x000002c3       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+                0x000002c3       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
  .ARM.attributes
-                0x000002f1       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x000002f1       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
  .ARM.attributes
-                0x0000031f       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+                0x0000031f       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
  .ARM.attributes
-                0x0000034d       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x0000034d       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
  .ARM.attributes
-                0x0000037b       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x0000037b       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
  .ARM.attributes
-                0x000003a9       0x1e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_mulsf3.o)
+                0x000003a9       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
  .ARM.attributes
-                0x000003c7       0x1e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_addsubsf3.o)
+                0x000003d7       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
  .ARM.attributes
-                0x000003e5       0x1e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_cmpsf2.o)
+                0x00000405       0x2e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
  .ARM.attributes
-                0x00000403       0x1e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_fixsfsi.o)
+                0x00000433       0x1e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_mulsf3.o)
  .ARM.attributes
-                0x00000421       0x2e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-impure.o)
+                0x00000451       0x1e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_addsubsf3.o)
  .ARM.attributes
-                0x0000044f       0x2e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-init.o)
+                0x0000046f       0x1e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_cmpsf2.o)
  .ARM.attributes
-                0x0000047d       0x2e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memset.o)
+                0x0000048d       0x1e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_fixsfsi.o)
  .ARM.attributes
-                0x000004ab       0x2e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
+                0x000004ab       0x1e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
  .ARM.attributes
-                0x000004d9       0x2e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-atexit.o)
+                0x000004c9       0x2e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
  .ARM.attributes
-                0x00000507       0x2e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fini.o)
+                0x000004f7       0x1e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x00000535       0x2e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
+                0x00000515       0x2e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-impure.o)
  .ARM.attributes
-                0x00000563       0x2e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__atexit.o)
+                0x00000543       0x2e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-init.o)
  .ARM.attributes
-                0x00000591       0x1e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
+                0x00000571       0x2e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000059f       0x2e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x000005cd       0x2e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-atexit.o)
+ .ARM.attributes
+                0x000005fb       0x2e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fini.o)
+ .ARM.attributes
+                0x00000629       0x2e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
+ .ARM.attributes
+                0x00000657       0x2e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x00000685       0x1e d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
 OUTPUT(M3508_Motor_Control.elf elf32-littlearm)
 LOAD linker stubs
 LOAD d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc.a
 LOAD d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a
 LOAD d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a
 
-.debug_info     0x00000000    0x1350c
+.debug_info     0x00000000    0x1c3a8
  .debug_info    0x00000000      0x97c CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/can_communication.c.obj
  .debug_info    0x0000097c      0x38f CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj
- .debug_info    0x00000d0b     0x19c9 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
- .debug_info    0x000026d4      0x1bd CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
- .debug_info    0x00002891      0x2ad CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
- .debug_info    0x00002b3e     0x1704 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
- .debug_info    0x00004242      0xf0b CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
- .debug_info    0x0000514d      0xddf CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
- .debug_info    0x00005f2c      0x3f9 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
- .debug_info    0x00006325       0x22 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj
- .debug_info    0x00006347      0xc72 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
- .debug_info    0x00006fb9     0x10fb CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
- .debug_info    0x000080b4     0x1d72 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
- .debug_info    0x00009e26      0x865 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
- .debug_info    0x0000a68b      0xa07 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
- .debug_info    0x0000b092      0xefa CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
- .debug_info    0x0000bf8c      0xf39 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
- .debug_info    0x0000cec5     0x410f CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
- .debug_info    0x00010fd4     0x2538 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .debug_info    0x00000d0b     0x1e82 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+ .debug_info    0x00002b8d      0x1bd CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
+ .debug_info    0x00002d4a      0x2ad CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
+ .debug_info    0x00002ff7     0x1c0e CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+ .debug_info    0x00004c05      0xf0b CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
+ .debug_info    0x00005b10     0x11dd CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+ .debug_info    0x00006ced      0x3f9 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
+ .debug_info    0x000070e6       0x22 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj
+ .debug_info    0x00007108      0xc72 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+ .debug_info    0x00007d7a     0x10fb CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+ .debug_info    0x00008e75      0xa56 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+ .debug_info    0x000098cb     0x1d72 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+ .debug_info    0x0000b63d      0x865 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+ .debug_info    0x0000bea2      0xa07 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+ .debug_info    0x0000c8a9      0xefa CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+ .debug_info    0x0000d7a3      0xf39 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+ .debug_info    0x0000e6dc     0x410f CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+ .debug_info    0x000127eb     0x2538 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .debug_info    0x00014d23     0x6404 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .debug_info    0x0001b127     0x1281 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
 
-.debug_abbrev   0x00000000     0x2397
+.debug_abbrev   0x00000000     0x2be8
  .debug_abbrev  0x00000000      0x182 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/can_communication.c.obj
  .debug_abbrev  0x00000182      0x11c CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj
- .debug_abbrev  0x0000029e      0x307 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
- .debug_abbrev  0x000005a5       0xb0 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
- .debug_abbrev  0x00000655      0x10f CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
- .debug_abbrev  0x00000764      0x20f CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
- .debug_abbrev  0x00000973      0x230 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
- .debug_abbrev  0x00000ba3      0x1aa CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
- .debug_abbrev  0x00000d4d      0x119 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
- .debug_abbrev  0x00000e66       0x12 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj
- .debug_abbrev  0x00000e78      0x23e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
- .debug_abbrev  0x000010b6      0x361 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
- .debug_abbrev  0x00001417      0x1c7 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
- .debug_abbrev  0x000015de      0x1e6 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
- .debug_abbrev  0x000017c4      0x245 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
- .debug_abbrev  0x00001a09      0x26f CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
- .debug_abbrev  0x00001c78      0x243 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
- .debug_abbrev  0x00001ebb      0x263 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
- .debug_abbrev  0x0000211e      0x279 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .debug_abbrev  0x0000029e      0x30e CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+ .debug_abbrev  0x000005ac       0xb0 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
+ .debug_abbrev  0x0000065c      0x10f CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
+ .debug_abbrev  0x0000076b      0x246 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+ .debug_abbrev  0x000009b1      0x230 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
+ .debug_abbrev  0x00000be1      0x1b1 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+ .debug_abbrev  0x00000d92      0x119 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
+ .debug_abbrev  0x00000eab       0x12 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj
+ .debug_abbrev  0x00000ebd      0x23e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+ .debug_abbrev  0x000010fb      0x361 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+ .debug_abbrev  0x0000145c      0x216 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+ .debug_abbrev  0x00001672      0x1c7 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+ .debug_abbrev  0x00001839      0x1e6 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+ .debug_abbrev  0x00001a1f      0x245 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+ .debug_abbrev  0x00001c64      0x26f CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+ .debug_abbrev  0x00001ed3      0x243 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+ .debug_abbrev  0x00002116      0x263 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+ .debug_abbrev  0x00002379      0x279 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .debug_abbrev  0x000025f2      0x306 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .debug_abbrev  0x000028f8      0x2f0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
 
-.debug_loc      0x00000000     0xd6a4
+.debug_loc      0x00000000    0x147e2
  .debug_loc     0x00000000       0x4a CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/can_communication.c.obj
  .debug_loc     0x0000004a       0xc0 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj
  .debug_loc     0x0000010a       0xa9 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
  .debug_loc     0x000001b3       0xa0 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
- .debug_loc     0x00000253      0x105 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
- .debug_loc     0x00000358       0xd0 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
- .debug_loc     0x00000428       0x9d CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
- .debug_loc     0x000004c5      0x1ef CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
- .debug_loc     0x000006b4      0x736 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
- .debug_loc     0x00000dea     0x16a0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
- .debug_loc     0x0000248a      0x3b3 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
- .debug_loc     0x0000283d      0xa23 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
- .debug_loc     0x00003260      0x84d CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
- .debug_loc     0x00003aad     0x1523 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
- .debug_loc     0x00004fd0     0x5866 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
- .debug_loc     0x0000a836     0x2e6e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .debug_loc     0x00000253      0x1a3 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+ .debug_loc     0x000003f6       0xd0 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
+ .debug_loc     0x000004c6       0x9d CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
+ .debug_loc     0x00000563      0x1ef CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+ .debug_loc     0x00000752      0x736 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+ .debug_loc     0x00000e88      0x8a0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+ .debug_loc     0x00001728     0x16a0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+ .debug_loc     0x00002dc8      0x3b3 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+ .debug_loc     0x0000317b      0xa23 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+ .debug_loc     0x00003b9e      0x84d CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+ .debug_loc     0x000043eb     0x1523 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+ .debug_loc     0x0000590e     0x5866 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+ .debug_loc     0x0000b174     0x2e6e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .debug_loc     0x0000dfe2     0x5bc6 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .debug_loc     0x00013ba8      0xc3a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
 
-.debug_aranges  0x00000000      0xf58
+.debug_aranges  0x00000000     0x12f8
  .debug_aranges
                 0x00000000       0x30 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/can_communication.c.obj
  .debug_aranges
                 0x00000030       0x38 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj
  .debug_aranges
-                0x00000068       0x60 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+                0x00000068       0x68 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
  .debug_aranges
-                0x000000c8       0x30 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
+                0x000000d0       0x30 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
  .debug_aranges
-                0x000000f8       0x30 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
+                0x00000100       0x30 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
  .debug_aranges
-                0x00000128       0x40 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+                0x00000130       0x50 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
  .debug_aranges
-                0x00000168       0x30 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
+                0x00000180       0x30 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
  .debug_aranges
-                0x00000198       0x78 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                0x000001b0       0x80 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
  .debug_aranges
-                0x00000210       0x28 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
+                0x00000230       0x28 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
  .debug_aranges
-                0x00000238       0x28 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj
+                0x00000258       0x28 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj
  .debug_aranges
-                0x00000260      0x148 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+                0x00000280      0x148 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
  .debug_aranges
-                0x000003a8       0xa8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+                0x000003c8       0xa8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
  .debug_aranges
-                0x00000450      0x208 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+                0x00000470       0x90 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
  .debug_aranges
-                0x00000658       0x58 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+                0x00000500      0x208 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
  .debug_aranges
-                0x000006b0      0x140 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+                0x00000708       0x58 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
  .debug_aranges
-                0x000007f0       0x98 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+                0x00000760      0x140 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
  .debug_aranges
-                0x00000888       0xb0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+                0x000008a0       0x98 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
  .debug_aranges
-                0x00000938      0x3e0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+                0x00000938       0xb0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
  .debug_aranges
-                0x00000d18      0x240 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+                0x000009e8      0x3e0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+ .debug_aranges
+                0x00000dc8      0x240 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .debug_aranges
+                0x00001008      0x248 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .debug_aranges
+                0x00001250       0xa8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
 
-.debug_ranges   0x00000000      0xed8
+.debug_ranges   0x00000000     0x1260
  .debug_ranges  0x00000000       0x20 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/can_communication.c.obj
  .debug_ranges  0x00000020       0x28 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj
- .debug_ranges  0x00000048       0x68 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
- .debug_ranges  0x000000b0       0x20 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
- .debug_ranges  0x000000d0       0x20 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
- .debug_ranges  0x000000f0       0x30 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
- .debug_ranges  0x00000120       0x20 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
- .debug_ranges  0x00000140       0x68 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
- .debug_ranges  0x000001a8       0x18 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
- .debug_ranges  0x000001c0       0x20 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj
- .debug_ranges  0x000001e0      0x138 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
- .debug_ranges  0x00000318       0xf8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
- .debug_ranges  0x00000410      0x1f8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
- .debug_ranges  0x00000608       0x48 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
- .debug_ranges  0x00000650      0x130 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
- .debug_ranges  0x00000780       0xa0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
- .debug_ranges  0x00000820       0xb8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
- .debug_ranges  0x000008d8      0x3d0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
- .debug_ranges  0x00000ca8      0x230 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .debug_ranges  0x00000048       0x70 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+ .debug_ranges  0x000000b8       0x20 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
+ .debug_ranges  0x000000d8       0x20 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
+ .debug_ranges  0x000000f8       0x40 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+ .debug_ranges  0x00000138       0x20 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
+ .debug_ranges  0x00000158       0x70 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+ .debug_ranges  0x000001c8       0x18 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
+ .debug_ranges  0x000001e0       0x20 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj
+ .debug_ranges  0x00000200      0x138 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+ .debug_ranges  0x00000338       0xf8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+ .debug_ranges  0x00000430       0x80 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+ .debug_ranges  0x000004b0      0x1f8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+ .debug_ranges  0x000006a8       0x48 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+ .debug_ranges  0x000006f0      0x130 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+ .debug_ranges  0x00000820       0xa0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+ .debug_ranges  0x000008c0       0xb8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+ .debug_ranges  0x00000978      0x3d0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+ .debug_ranges  0x00000d48      0x230 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .debug_ranges  0x00000f78      0x238 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .debug_ranges  0x000011b0       0xb0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
 
-.debug_line     0x00000000    0x102a7
+.debug_line     0x00000000    0x184df
  .debug_line    0x00000000      0x408 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/can_communication.c.obj
  .debug_line    0x00000408      0x321 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj
- .debug_line    0x00000729      0x813 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
- .debug_line    0x00000f3c      0x2ee CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
- .debug_line    0x0000122a      0x23a CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
- .debug_line    0x00001464      0x4d3 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
- .debug_line    0x00001937      0x3bd CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
- .debug_line    0x00001cf4      0x40a CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
- .debug_line    0x000020fe      0x2ce CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
- .debug_line    0x000023cc       0xc4 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj
- .debug_line    0x00002490      0x801 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
- .debug_line    0x00002c91      0x896 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
- .debug_line    0x00003527     0x1b07 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
- .debug_line    0x0000502e      0x778 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
- .debug_line    0x000057a6      0xba9 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
- .debug_line    0x0000634f      0xee0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
- .debug_line    0x0000722f     0x134b CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
- .debug_line    0x0000857a     0x55b8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
- .debug_line    0x0000db32     0x2775 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .debug_line    0x00000729      0x8f0 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+ .debug_line    0x00001019      0x2ee CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
+ .debug_line    0x00001307      0x23a CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
+ .debug_line    0x00001541      0x5ae CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+ .debug_line    0x00001aef      0x3bd CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
+ .debug_line    0x00001eac      0x43b CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+ .debug_line    0x000022e7      0x2ce CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
+ .debug_line    0x000025b5       0xc4 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj
+ .debug_line    0x00002679      0x801 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+ .debug_line    0x00002e7a      0x896 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+ .debug_line    0x00003710      0xd3a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+ .debug_line    0x0000444a     0x1b05 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+ .debug_line    0x00005f4f      0x778 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+ .debug_line    0x000066c7      0xba9 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+ .debug_line    0x00007270      0xee0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+ .debug_line    0x00008150     0x134b CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+ .debug_line    0x0000949b     0x55b8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+ .debug_line    0x0000ea53     0x2775 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .debug_line    0x000111c8     0x6551 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .debug_line    0x00017719      0xdc6 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
 
-.debug_str      0x00000000     0x5ae7
+.debug_str      0x00000000     0x6bc5
  .debug_str     0x00000000      0x76c CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/can_communication.c.obj
                                 0x827 (size before relaxing)
  .debug_str     0x0000076c      0x1b2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj
                                 0x419 (size before relaxing)
- .debug_str     0x0000091e      0xb29 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
-                               0x113a (size before relaxing)
- .debug_str     0x00001447       0x6f CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
+ .debug_str     0x0000091e      0xdd8 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+                               0x1428 (size before relaxing)
+ .debug_str     0x000016f6       0x6f CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
                                 0x2de (size before relaxing)
- .debug_str     0x000014b6       0xa7 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
+ .debug_str     0x00001765       0xa7 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
                                 0x2c1 (size before relaxing)
- .debug_str     0x0000155d      0x937 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
-                               0x1623 (size before relaxing)
- .debug_str     0x00001e94      0x11c CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
+ .debug_str     0x0000180c      0x961 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+                               0x18b8 (size before relaxing)
+ .debug_str     0x0000216d      0x11c CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
                                0x112d (size before relaxing)
- .debug_str     0x00001fb0      0x14d CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
-                                0xc4b (size before relaxing)
- .debug_str     0x000020fd       0xc2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
+ .debug_str     0x00002289      0x173 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+                                0xf09 (size before relaxing)
+ .debug_str     0x000023fc       0xc2 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
                                 0x3df (size before relaxing)
- .debug_str     0x000021bf       0x71 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj
+ .debug_str     0x000024be       0x71 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj
                                  0xc1 (size before relaxing)
- .debug_str     0x00002230      0x47c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+ .debug_str     0x0000252f      0x47c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
                                 0xea1 (size before relaxing)
- .debug_str     0x000026ac      0x4b1 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+ .debug_str     0x000029ab      0x4ac CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
                                 0xdc9 (size before relaxing)
- .debug_str     0x00002b5d      0xa60 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+ .debug_str     0x00002e57      0x2fe CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+                                0x80d (size before relaxing)
+ .debug_str     0x00003155      0xa56 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
                                0x1299 (size before relaxing)
- .debug_str     0x000035bd      0x14c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+ .debug_str     0x00003bab      0x147 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
                                 0x5ac (size before relaxing)
- .debug_str     0x00003709      0x526 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+ .debug_str     0x00003cf2      0x526 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
                                 0x84e (size before relaxing)
- .debug_str     0x00003c2f      0x28e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+ .debug_str     0x00004218      0x28e CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
                                 0x8c1 (size before relaxing)
- .debug_str     0x00003ebd      0x3b8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+ .debug_str     0x000044a6      0x3b0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
                                 0xad1 (size before relaxing)
- .debug_str     0x00004275      0xf22 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+ .debug_str     0x00004856      0xef8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
                                0x18db (size before relaxing)
- .debug_str     0x00005197      0x950 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .debug_str     0x0000574e      0x950 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
                                0x1533 (size before relaxing)
+ .debug_str     0x0000609e      0x8aa CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+                               0x1296 (size before relaxing)
+ .debug_str     0x00006948      0x27d CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+                                0xbbf (size before relaxing)
 
 .comment        0x00000000       0x49
  .comment       0x00000000       0x49 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/can_communication.c.obj
@@ -2140,6 +2410,7 @@ LOAD d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-
  .comment       0x00000049       0x4a CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
  .comment       0x00000049       0x4a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
  .comment       0x00000049       0x4a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+ .comment       0x00000049       0x4a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
  .comment       0x00000049       0x4a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
  .comment       0x00000049       0x4a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
  .comment       0x00000049       0x4a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
@@ -2147,34 +2418,41 @@ LOAD d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-
  .comment       0x00000049       0x4a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
  .comment       0x00000049       0x4a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
  .comment       0x00000049       0x4a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .comment       0x00000049       0x4a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .comment       0x00000049       0x4a CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
 
-.debug_frame    0x00000000     0x2844
+.debug_frame    0x00000000     0x32cc
  .debug_frame   0x00000000       0x74 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/can_communication.c.obj
  .debug_frame   0x00000074       0x70 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj
- .debug_frame   0x000000e4      0x10c CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
- .debug_frame   0x000001f0       0x58 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
- .debug_frame   0x00000248       0x50 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
- .debug_frame   0x00000298       0x98 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
- .debug_frame   0x00000330       0x54 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
- .debug_frame   0x00000384       0xe8 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
- .debug_frame   0x0000046c       0x30 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
- .debug_frame   0x0000049c      0x2a4 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
- .debug_frame   0x00000740      0x148 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
- .debug_frame   0x00000888      0x4a4 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
- .debug_frame   0x00000d2c       0xd0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
- .debug_frame   0x00000dfc      0x268 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
- .debug_frame   0x00001064      0x198 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
- .debug_frame   0x000011fc      0x1a0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
- .debug_frame   0x0000139c      0xb50 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
- .debug_frame   0x00001eec      0x610 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
- .debug_frame   0x000024fc       0x24 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_mulsf3.o)
- .debug_frame   0x00002520       0x4c d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_addsubsf3.o)
- .debug_frame   0x0000256c       0xc8 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_cmpsf2.o)
- .debug_frame   0x00002634       0x24 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_fixsfsi.o)
- .debug_frame   0x00002658       0x2c d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-init.o)
- .debug_frame   0x00002684       0x2c d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memset.o)
- .debug_frame   0x000026b0       0x5c d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
- .debug_frame   0x0000270c       0x20 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-atexit.o)
- .debug_frame   0x0000272c       0x34 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fini.o)
- .debug_frame   0x00002760       0xb0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
- .debug_frame   0x00002810       0x34 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__atexit.o)
+ .debug_frame   0x000000e4      0x124 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+ .debug_frame   0x00000208       0x58 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
+ .debug_frame   0x00000260       0x50 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
+ .debug_frame   0x000002b0       0xd0 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+ .debug_frame   0x00000380       0x54 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
+ .debug_frame   0x000003d4      0x100 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+ .debug_frame   0x000004d4       0x30 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
+ .debug_frame   0x00000504      0x2a4 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+ .debug_frame   0x000007a8      0x148 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+ .debug_frame   0x000008f0      0x16c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+ .debug_frame   0x00000a5c      0x4a4 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+ .debug_frame   0x00000f00       0xd0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+ .debug_frame   0x00000fd0      0x268 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+ .debug_frame   0x00001238      0x198 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+ .debug_frame   0x000013d0      0x1a0 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+ .debug_frame   0x00001570      0xb50 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+ .debug_frame   0x000020c0      0x610 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+ .debug_frame   0x000026d0      0x67c CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+ .debug_frame   0x00002d4c      0x1d8 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+ .debug_frame   0x00002f24       0x24 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_mulsf3.o)
+ .debug_frame   0x00002f48       0x4c d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_addsubsf3.o)
+ .debug_frame   0x00002f94       0xc8 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_cmpsf2.o)
+ .debug_frame   0x0000305c       0x24 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_fixsfsi.o)
+ .debug_frame   0x00003080       0x2c d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x000030ac       0x34 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x000030e0       0x2c d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-init.o)
+ .debug_frame   0x0000310c       0x2c d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memset.o)
+ .debug_frame   0x00003138       0x5c d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00003194       0x20 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-atexit.o)
+ .debug_frame   0x000031b4       0x34 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fini.o)
+ .debug_frame   0x000031e8       0xb0 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
+ .debug_frame   0x00003298       0x34 d:/stm32cubemx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__atexit.o)
