@@ -50,7 +50,16 @@ include_directories(Core/Inc Drivers/STM32G4xx_HAL_Driver/Inc Drivers/STM32G4xx_
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx)
 
-file(GLOB_RECURSE SOURCES "Core/*.*" "Drivers/*.*")
+# 改进文件收集，排除不需要的CMSIS模板和测试文件
+file(GLOB_RECURSE SOURCES
+        "Core/*.*"
+        "Drivers/STM32G4xx_HAL_Driver/*.*"
+        "Drivers/CMSIS/Device/*.*"
+        )
+
+# 排除不需要的CMSIS模板文件
+list(FILTER SOURCES EXCLUDE REGEX ".*Template.*")
+list(FILTER SOURCES EXCLUDE REGEX ".*TestSuite.*")
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32G474VETX_FLASH.ld)
 

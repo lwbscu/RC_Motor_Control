@@ -3,7 +3,6 @@
 
 # compile ASM with D:/STM32CubeMx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe
 # compile C with D:/STM32CubeMx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe
-# compile CXX with D:/STM32CubeMx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-g++.exe
 ASM_FLAGS = -g   -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
 
 ASM_DEFINES = -DDEBUG -DSTM32G474xx -DUSE_HAL_DRIVER
@@ -15,10 +14,4 @@ C_FLAGS = -g   -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fd
 C_DEFINES = -DDEBUG -DSTM32G474xx -DUSE_HAL_DRIVER
 
 C_INCLUDES = -ID:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Core\Inc -ID:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Inc -ID:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy -ID:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\CMSIS\Device\ST\STM32G4xx\Include -ID:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\CMSIS\Include 
-
-CXX_FLAGS = -g   -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu++17
-
-CXX_DEFINES = -DDEBUG -DSTM32G474xx -DUSE_HAL_DRIVER
-
-CXX_INCLUDES = -ID:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Core\Inc -ID:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Inc -ID:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy -ID:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\CMSIS\Device\ST\STM32G4xx\Include -ID:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\CMSIS\Include 
 
