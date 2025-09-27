@@ -87,6 +87,7 @@ void M3508_SetPositionPID(float kp, float ki, float kd) {
     motor.position_pid.kd = kd;
 }
 
+// 修复M3508_ControlUpdate()中的串级控制部分
 void M3508_ControlUpdate(void) {
     if (!motor.initialized || !motor.enabled) return;
 
@@ -110,8 +111,7 @@ void M3508_ControlUpdate(void) {
                 // 切换到串级模式时，重置所有PID
                 PID_Reset(&motor.speed_pid);
                 PID_Reset(&motor.position_pid);
-                // 将当前位置设为目标位置
-                motor.target_position = motor.current_position;
+                // 注意：不要重置目标位置，保持用户设定值
                 break;
         }
         motor.last_control_type = motor.control_type;
@@ -135,15 +135,26 @@ void M3508_ControlUpdate(void) {
             break;
 
         case CONTROL_CASCADE:
-            // 串级控制 - 位置环输出作为速度环输入
-            speed_target = PID_Calculate(&motor.position_pid,
-                                         motor.target_position,
-                                         motor.current_position);
-            // 叠加设定的速度分量
-            speed_target += motor.target_speed;
-            // 限制速度输出
-            if (speed_target > 300.0f) speed_target = 300.0f;
-            if (speed_target < -300.0f) speed_target = -300.0f;
+        {
+            // 串级控制：位置环输出受target_speed限制
+            float position_output = PID_Calculate(&motor.position_pid,
+                                                  motor.target_position,
+                                                  motor.current_position);
+
+            // 使用target_speed作为速度限制
+            float speed_limit = fabs(motor.target_speed);
+            if (speed_limit < 0.1f) speed_limit = 0.1f; // 最小速度限制，避免除零
+
+            // 将位置环输出限制在用户设定的速度范围内
+            if (position_output > speed_limit) {
+                position_output = speed_limit;
+            } else if (position_output < -speed_limit) {
+                position_output = -speed_limit;
+            }
+
+            // 位置环输出作为速度环目标
+            speed_target = position_output;
+        }
             break;
     }
 

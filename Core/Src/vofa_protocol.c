@@ -56,6 +56,23 @@ void VOFA_ProcessCommand(void) {
         motor.control_type = CONTROL_CASCADE;
     }
 
+        // 串级控制专用命令 - 只设置参数，不切换模式
+    else if (sscanf(cmd, "type3_speed:%f", &value1) == 1) {
+        // 在串级模式下，这个速度参数暂不使用（因为速度由位置环输出决定）
+        M3508_SetTargetSpeed(value1);
+    }
+    else if (sscanf(cmd, "type3_pos:%f", &value1) == 1) {
+        M3508_SetTargetPosition(value1);
+    }
+    else if (sscanf(cmd, "cascade3_enable:%f", &value1) == 1) {
+        if (value1 > 0) {
+            motor.enabled = 1;
+            motor.control_type = CONTROL_CASCADE;
+        } else {
+            motor.enabled = 0;
+        }
+    }
+
         // 档位控制
     else if (sscanf(cmd, "speed_mode:%f", &value1) == 1) {
         float speeds[] = {0.5f, 1.0f, 2.0f};
@@ -67,7 +84,6 @@ void VOFA_ProcessCommand(void) {
     else if (sscanf(cmd, "position_mode:%f", &value1) == 1){
         M3508_SetTargetPosition(value1);
         motor.control_type = CONTROL_POSITION;
-
     }
 
         // 基础控制
