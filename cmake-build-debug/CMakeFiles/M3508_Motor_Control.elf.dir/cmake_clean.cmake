@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/syscalls.c.obj"
   "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/sysmem.c.obj"
   "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.obj"
   "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj"
   "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj"
   "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj"

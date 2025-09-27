@@ -439,6 +439,33 @@ Core/Src/system_stm32g4xx.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.s
 .PHONY : Core/Src/system_stm32g4xx.c.s
 
+Core/Src/vofa_protocol.obj: Core/Src/vofa_protocol.c.obj
+
+.PHONY : Core/Src/vofa_protocol.obj
+
+# target to build an object file
+Core/Src/vofa_protocol.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.obj
+.PHONY : Core/Src/vofa_protocol.c.obj
+
+Core/Src/vofa_protocol.i: Core/Src/vofa_protocol.c.i
+
+.PHONY : Core/Src/vofa_protocol.i
+
+# target to preprocess a source file
+Core/Src/vofa_protocol.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.i
+.PHONY : Core/Src/vofa_protocol.c.i
+
+Core/Src/vofa_protocol.s: Core/Src/vofa_protocol.c.s
+
+.PHONY : Core/Src/vofa_protocol.s
+
+# target to generate assembly for a file
+Core/Src/vofa_protocol.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.s
+.PHONY : Core/Src/vofa_protocol.c.s
+
 Core/Startup/startup_stm32g474vetx.obj: Core/Startup/startup_stm32g474vetx.s.obj
 
 .PHONY : Core/Startup/startup_stm32g474vetx.obj
@@ -976,6 +1003,9 @@ help:
 	@echo ... Core/Src/system_stm32g4xx.obj
 	@echo ... Core/Src/system_stm32g4xx.i
 	@echo ... Core/Src/system_stm32g4xx.s
+	@echo ... Core/Src/vofa_protocol.obj
+	@echo ... Core/Src/vofa_protocol.i
+	@echo ... Core/Src/vofa_protocol.s
 	@echo ... Core/Startup/startup_stm32g474vetx.obj
 	@echo ... Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.obj
 	@echo ... Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.i

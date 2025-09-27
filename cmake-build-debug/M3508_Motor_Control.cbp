@@ -117,6 +117,9 @@
 		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Core/Inc/stm32g4xx_it.h">
 			<Option target="M3508_Motor_Control.elf"/>
 		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Core/Inc/vofa_protocol.h">
+			<Option target="M3508_Motor_Control.elf"/>
+		</Unit>
 		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Core/Src/can_communication.c">
 			<Option target="M3508_Motor_Control.elf"/>
 		</Unit>
@@ -148,6 +151,9 @@
 			<Option target="M3508_Motor_Control.elf"/>
 		</Unit>
 		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Core/Src/system_stm32g4xx.c">
+			<Option target="M3508_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Core/Src/vofa_protocol.c">
 			<Option target="M3508_Motor_Control.elf"/>
 		</Unit>
 		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Core/Startup/startup_stm32g474vetx.s">

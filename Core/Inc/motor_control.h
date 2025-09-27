@@ -2,9 +2,9 @@
 #define MOTOR_CONTROL_H
 
 #include "main.h"
+#include "vofa_protocol.h"
 
 void MotorControl_Init(void);
 void MotorControl_Task(void);
-void MotorControl_Test(void);
 
 #endif

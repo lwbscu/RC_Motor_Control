@@ -23,6 +23,7 @@
 /* USER CODE BEGIN Includes */
 #include "motor_control.h"
 #include "can_communication.h"
+#include "vofa_protocol.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -54,14 +55,14 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
- FDCAN_HandleTypeDef hfdcan1;
+FDCAN_HandleTypeDef hfdcan1;
 
 TIM_HandleTypeDef htim2;
 
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
-
+static uint32_t vofa_send_counter = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -388,6 +389,13 @@ void HAL_FDCAN_RxFifo0Callback(FDCAN_HandleTypeDef *hfdcan, uint32_t RxFifo0ITs)
         CAN_ReceiveCallback(hfdcan);
     }
 }
+/* USER CODE BEGIN 4 */
+// UART接收中断回调
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+    if (huart->Instance == USART1) {
+        VOFA_UART_RxCallback();
+    }
+}
 /* USER CODE END 4 */
 
 /**
@@ -427,7 +435,11 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
         // 电机控制任务
         MotorControl_Task();     // PID控制任务
-        MotorControl_Test();     // 测试程序
+        // VOFA+数据发送 - 每100ms发送一次
+        if (++vofa_send_counter >= 10) {
+            vofa_send_counter = 0;
+            VOFA_SendData();
+        }
     }
   /* USER CODE END Callback 1 */
 }

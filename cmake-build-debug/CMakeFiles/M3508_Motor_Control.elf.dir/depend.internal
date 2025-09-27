@@ -83,9 +83,12 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj
  D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Core/Src/m3508_motor.c
 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
  ../Core/Inc/can_communication.h
+ ../Core/Inc/m3508_motor.h
  ../Core/Inc/main.h
  ../Core/Inc/motor_control.h
+ ../Core/Inc/pid_controller.h
  ../Core/Inc/stm32g4xx_hal_conf.h
+ ../Core/Inc/vofa_protocol.h
  ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g474xx.h
  ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h
  ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h
@@ -127,6 +130,7 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
  ../Core/Inc/motor_control.h
  ../Core/Inc/pid_controller.h
  ../Core/Inc/stm32g4xx_hal_conf.h
+ ../Core/Inc/vofa_protocol.h
  ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g474xx.h
  ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h
  ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h
@@ -315,6 +319,47 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h
  D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Core/Src/system_stm32g4xx.c
+CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.obj
+ ../Core/Inc/can_communication.h
+ ../Core/Inc/m3508_motor.h
+ ../Core/Inc/main.h
+ ../Core/Inc/pid_controller.h
+ ../Core/Inc/stm32g4xx_hal_conf.h
+ ../Core/Inc/vofa_protocol.h
+ ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g474xx.h
+ ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h
+ ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h
+ ../Drivers/CMSIS/Include/cmsis_armcc.h
+ ../Drivers/CMSIS/Include/cmsis_armclang.h
+ ../Drivers/CMSIS/Include/cmsis_armclang_ltm.h
+ ../Drivers/CMSIS/Include/cmsis_compiler.h
+ ../Drivers/CMSIS/Include/cmsis_gcc.h
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h
+ ../Drivers/CMSIS/Include/cmsis_version.h
+ ../Drivers/CMSIS/Include/core_cm4.h
+ ../Drivers/CMSIS/Include/mpu_armv7.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_fdcan.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h
+ D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/Core/Src/vofa_protocol.c
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
  ../Core/Inc/stm32g4xx_hal_conf.h
  ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g474xx.h

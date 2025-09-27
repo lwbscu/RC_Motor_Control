@@ -219,14 +219,27 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.s"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Core\Src\system_stm32g4xx.c -o CMakeFiles\M3508_Motor_Control.elf.dir\Core\Src\system_stm32g4xx.c.s
 
+CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
+CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.obj: ../Core/Src/vofa_protocol.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.obj"
+	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Core\Src\vofa_protocol.c.obj   -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Core\Src\vofa_protocol.c
+
+CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.i"
+	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Core\Src\vofa_protocol.c > CMakeFiles\M3508_Motor_Control.elf.dir\Core\Src\vofa_protocol.c.i
+
+CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.s"
+	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Core\Src\vofa_protocol.c -o CMakeFiles\M3508_Motor_Control.elf.dir\Core\Src\vofa_protocol.c.s
+
 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
 CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj: ../Core/Startup/startup_stm32g474vetx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building ASM object CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building ASM object CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Core\Startup\startup_stm32g474vetx.s.obj -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Core\Startup\startup_stm32g474vetx.s
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal.c.obj   -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal.c
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.i: cmake_force
@@ -239,7 +252,7 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_cortex.c.obj   -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_cortex.c
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.i: cmake_force
@@ -252,7 +265,7 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_dma.c.obj   -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_dma.c
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.i: cmake_force
@@ -265,7 +278,7 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_dma_ex.c.obj   -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_dma_ex.c
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.i: cmake_force
@@ -278,7 +291,7 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_exti.c.obj   -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_exti.c
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.i: cmake_force
@@ -291,7 +304,7 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_fdcan.c.obj   -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_fdcan.c
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.i: cmake_force
@@ -304,7 +317,7 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_flash.c.obj   -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_flash.c
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.i: cmake_force
@@ -317,7 +330,7 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_flash_ex.c.obj   -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_flash_ex.c
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.i: cmake_force
@@ -330,7 +343,7 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_flash_ramfunc.c.obj   -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_flash_ramfunc.c
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.i: cmake_force
@@ -343,7 +356,7 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_gpio.c.obj   -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_gpio.c
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.i: cmake_force
@@ -356,7 +369,7 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_pwr.c.obj   -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_pwr.c
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.i: cmake_force
@@ -369,7 +382,7 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_pwr_ex.c.obj   -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_pwr_ex.c
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.i: cmake_force
@@ -382,7 +395,7 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_rcc.c.obj   -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_rcc.c
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.i: cmake_force
@@ -395,7 +408,7 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_rcc_ex.c.obj   -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_rcc_ex.c
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.i: cmake_force
@@ -408,7 +421,7 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_tim.c.obj   -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_tim.c
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.i: cmake_force
@@ -421,7 +434,7 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_tim_ex.c.obj   -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_tim_ex.c
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.i: cmake_force
@@ -434,7 +447,7 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_uart.c.obj   -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_uart.c
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.i: cmake_force
@@ -447,7 +460,7 @@ CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4x
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj: CMakeFiles/M3508_Motor_Control.elf.dir/flags.make
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj"
 	D:\STM32CubeMx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\M3508_Motor_Control.elf.dir\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_uart_ex.c.obj   -c D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_uart_ex.c
 
 CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.i: cmake_force
@@ -471,6 +484,7 @@ M3508_Motor_Control_elf_OBJECTS = \
 "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/syscalls.c.obj" \
 "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/sysmem.c.obj" \
 "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj" \
+"CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.obj" \
 "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj" \
 "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj" \
 "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj" \
@@ -505,6 +519,7 @@ M3508_Motor_Control.elf: CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4
 M3508_Motor_Control.elf: CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/syscalls.c.obj
 M3508_Motor_Control.elf: CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/sysmem.c.obj
 M3508_Motor_Control.elf: CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
+M3508_Motor_Control.elf: CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.obj
 M3508_Motor_Control.elf: CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj
 M3508_Motor_Control.elf: CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
 M3508_Motor_Control.elf: CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
@@ -526,7 +541,7 @@ M3508_Motor_Control.elf: CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4x
 M3508_Motor_Control.elf: CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
 M3508_Motor_Control.elf: CMakeFiles/M3508_Motor_Control.elf.dir/build.make
 M3508_Motor_Control.elf: CMakeFiles/M3508_Motor_Control.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking C executable M3508_Motor_Control.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\STM32CubeMx\Project_File\STM32_Project\M3508_Motor_Control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking C executable M3508_Motor_Control.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\M3508_Motor_Control.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/cmake-build-debug/M3508_Motor_Control.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/STM32CubeMx/Project_File/STM32_Project/M3508_Motor_Control/cmake-build-debug/M3508_Motor_Control.bin"
