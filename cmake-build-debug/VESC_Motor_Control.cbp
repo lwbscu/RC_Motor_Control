@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="VESC_Motor_Control"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="VESC_Motor_Control.elf">
+				<Option output="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/VESC_Motor_Control.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32G474xx"/>
+					<Add directory="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Inc"/>
+					<Add directory="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/CMSIS/Device/ST/STM32G4xx/Include"/>
+					<Add directory="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/CMSIS/Include"/>
+					<Add directory="d:\stm32cubemx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="d:\stm32cubemx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="d:\stm32cubemx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="d:\stm32cubemx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="d:\stm32cubemx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="d:\stm32cubemx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 VESC_Motor_Control.elf"/>
+					<CompileFile command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="VESC_Motor_Control.elf/fast">
+				<Option output="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/VESC_Motor_Control.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32G474xx"/>
+					<Add directory="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Inc"/>
+					<Add directory="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/CMSIS/Device/ST/STM32G4xx/Include"/>
+					<Add directory="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/CMSIS/Include"/>
+					<Add directory="d:\stm32cubemx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="d:\stm32cubemx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="d:\stm32cubemx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="d:\stm32cubemx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="d:\stm32cubemx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="d:\stm32cubemx\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 VESC_Motor_Control.elf/fast"/>
+					<CompileFile command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/STM32CubeMx/mingw64/bin/mingw32-make.exe -f &quot;D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Inc/main.h">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Inc/motor_control.h">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Inc/stm32g4xx_hal_conf.h">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Inc/stm32g4xx_it.h">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Inc/vesc_communication.h">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Inc/vesc_motor.h">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Inc/vofa_protocol.h">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Src/main.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Src/motor_control.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Src/stm32g4xx_hal_msp.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Src/stm32g4xx_hal_timebase_tim.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Src/stm32g4xx_it.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Src/syscalls.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Src/sysmem.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Src/system_stm32g4xx.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Src/vesc_communication.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Src/vesc_motor.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Src/vofa_protocol.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Core/Startup/startup_stm32g474vetx.s">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g474xx.h">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/CMSIS/Device/ST/STM32G4xx/LICENSE.txt">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/STM32G474VETx_FLASH.ld">
+			<Option target="VESC_Motor_Control.elf"/>
+		</Unit>
+		<Unit filename="D:/STM32CubeMx/Project_File/STM32_Project/VESC6_N5065_Motor_Control/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
