@@ -76,6 +76,7 @@ void VESC_Motor_SetTarget(float value) {
             motor.target_current = value;
             break;
 
+
         case CONTROL_RPM:
             motor.target_rpm = (int32_t)value;
             break;

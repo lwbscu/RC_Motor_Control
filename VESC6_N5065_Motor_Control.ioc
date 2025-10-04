@@ -1,6 +1,6 @@
 #MicroXplorer Configuration settings - do not modify
 FDCAN1.IPParameters=NominalPrescaler,NominalTimeSeg1,NominalTimeSeg2
-FDCAN1.NominalPrescaler=5
+FDCAN1.NominalPrescaler=20
 FDCAN1.NominalTimeSeg1=13
 FDCAN1.NominalTimeSeg2=3
 File.Version=6
