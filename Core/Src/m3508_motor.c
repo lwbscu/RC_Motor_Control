@@ -53,7 +53,7 @@ void M3508_UpdateFeedback(void) {
         motor.last_encoder = current_encoder;
 
         // 计算当前位置（圈数）
-        motor.current_position = motor.encoder_rounds + (float)current_encoder / ENCODER_RESOLUTION;
+        motor.current_position = (motor.encoder_rounds + (float)current_encoder / ENCODER_RESOLUTION)/19;
     } else {
         // 速度环模式下，保持位置为0，重置位置相关变量
         motor.current_position = 0;
