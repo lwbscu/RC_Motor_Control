@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/can_communication.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/syscalls.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/sysmem.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj"
+  "CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj"
+  "M3508_Motor_Control.elf"
+  "M3508_Motor_Control.elf.manifest"
+  "M3508_Motor_Control.elf.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang ASM C)
+  include(CMakeFiles/M3508_Motor_Control.elf.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
