@@ -14,7 +14,8 @@ set(SIZE arm-none-eabi-size)
 set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
 
 # project settings
-project(M3508_Motor_Control C CXX ASM)
+# 关键修改：重命名项目
+project(M2006_Motor_Control C CXX ASM)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_C_STANDARD 11)
 
@@ -42,6 +43,7 @@ elseif ("${CMAKE_BUILD_TYPE}" STREQUAL "MinSizeRel")
     message(STATUS "Maximum optimization for size")
     add_compile_options(-Os)
 else ()
+
     message(STATUS "Minimal optimization, debug info included")
     add_compile_options(-Og -g)
 endif ()
@@ -51,6 +53,7 @@ include_directories(Core/Inc Drivers/STM32G4xx_HAL_Driver/Inc Drivers/STM32G4xx_
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx)
 
 # 改进文件收集，排除不需要的CMSIS模板和测试文件
+# Cmake的GLOB_RECURSE会自动找到 Core/Src/m2006_motor.c，前提是您已经重命名了文件
 file(GLOB_RECURSE SOURCES
         "Core/*.*"
         "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c"          # 基础HAL
@@ -58,13 +61,14 @@ file(GLOB_RECURSE SOURCES
         "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c"       # DMA（若依赖）
         "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c"    # DMA扩展（若依赖）
         "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c"      # EXTI（若依赖）
-        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c"     # FDCAN（M3508电机需用）
+        "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c"     # FDCAN（M2006电机需用）
         "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c"     # Flash
         "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c"  # Flash扩展
         "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c" # Flash RAM函数
         "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c"      # GPIO
         "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c"       # PWR
         "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c"    # PWR扩展
+
         "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c"       # RCC时钟
         "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c"    # RCC扩展
         "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c"       # TIM定时器（电机控制需用）
@@ -72,6 +76,7 @@ file(GLOB_RECURSE SOURCES
         "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c"      # UART核心驱动（关键！）
         "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c"   # UART扩展驱动（关键！）
         "Drivers/CMSIS/Device/*.*"
+
         )
 
 # 排除不需要的CMSIS模板文件

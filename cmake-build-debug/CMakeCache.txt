@@ -161,7 +161,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=M3508_Motor_Control
+CMAKE_PROJECT_NAME:STATIC=M2006_Motor_Control
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=D:/STM32CubeMx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-ranlib.exe
@@ -224,6 +224,12 @@ CMAKE_STRIP:FILEPATH=D:/STM32CubeMx/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Value Computed by CMake
+M2006_Motor_Control_BINARY_DIR:STATIC=D:/STM32CubeMx/Project_File/STM32_Project/M2006_Motor_Control/cmake-build-debug
+
+//Value Computed by CMake
+M2006_Motor_Control_SOURCE_DIR:STATIC=D:/STM32CubeMx/Project_File/STM32_Project/M2006_Motor_Control
 
 //Value Computed by CMake
 M3508_Motor_Control_BINARY_DIR:STATIC=D:/STM32CubeMx/Project_File/STM32_Project/M2006_Motor_Control/cmake-build-debug

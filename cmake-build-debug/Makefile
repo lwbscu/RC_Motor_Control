@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named M3508_Motor_Control.elf
+# Target rules for targets named M2006_Motor_Control.elf
 
 # Build rule for target.
-M3508_Motor_Control.elf: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 M3508_Motor_Control.elf
-.PHONY : M3508_Motor_Control.elf
+M2006_Motor_Control.elf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 M2006_Motor_Control.elf
+.PHONY : M2006_Motor_Control.elf
 
 # fast build rule for target.
-M3508_Motor_Control.elf/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/build
-.PHONY : M3508_Motor_Control.elf/fast
+M2006_Motor_Control.elf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/build
+.PHONY : M2006_Motor_Control.elf/fast
 
 Core/Src/can_communication.obj: Core/Src/can_communication.c.obj
 
@@ -148,7 +148,7 @@ Core/Src/can_communication.obj: Core/Src/can_communication.c.obj
 
 # target to build an object file
 Core/Src/can_communication.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/can_communication.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/can_communication.c.obj
 .PHONY : Core/Src/can_communication.c.obj
 
 Core/Src/can_communication.i: Core/Src/can_communication.c.i
@@ -157,7 +157,7 @@ Core/Src/can_communication.i: Core/Src/can_communication.c.i
 
 # target to preprocess a source file
 Core/Src/can_communication.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/can_communication.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/can_communication.c.i
 .PHONY : Core/Src/can_communication.c.i
 
 Core/Src/can_communication.s: Core/Src/can_communication.c.s
@@ -166,35 +166,35 @@ Core/Src/can_communication.s: Core/Src/can_communication.c.s
 
 # target to generate assembly for a file
 Core/Src/can_communication.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/can_communication.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/can_communication.c.s
 .PHONY : Core/Src/can_communication.c.s
 
-Core/Src/m3508_motor.obj: Core/Src/m3508_motor.c.obj
+Core/Src/m2006_motor.obj: Core/Src/m2006_motor.c.obj
 
-.PHONY : Core/Src/m3508_motor.obj
+.PHONY : Core/Src/m2006_motor.obj
 
 # target to build an object file
-Core/Src/m3508_motor.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.obj
-.PHONY : Core/Src/m3508_motor.c.obj
+Core/Src/m2006_motor.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/m2006_motor.c.obj
+.PHONY : Core/Src/m2006_motor.c.obj
 
-Core/Src/m3508_motor.i: Core/Src/m3508_motor.c.i
+Core/Src/m2006_motor.i: Core/Src/m2006_motor.c.i
 
-.PHONY : Core/Src/m3508_motor.i
+.PHONY : Core/Src/m2006_motor.i
 
 # target to preprocess a source file
-Core/Src/m3508_motor.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.i
-.PHONY : Core/Src/m3508_motor.c.i
+Core/Src/m2006_motor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/m2006_motor.c.i
+.PHONY : Core/Src/m2006_motor.c.i
 
-Core/Src/m3508_motor.s: Core/Src/m3508_motor.c.s
+Core/Src/m2006_motor.s: Core/Src/m2006_motor.c.s
 
-.PHONY : Core/Src/m3508_motor.s
+.PHONY : Core/Src/m2006_motor.s
 
 # target to generate assembly for a file
-Core/Src/m3508_motor.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/m3508_motor.c.s
-.PHONY : Core/Src/m3508_motor.c.s
+Core/Src/m2006_motor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/m2006_motor.c.s
+.PHONY : Core/Src/m2006_motor.c.s
 
 Core/Src/main.obj: Core/Src/main.c.obj
 
@@ -202,7 +202,7 @@ Core/Src/main.obj: Core/Src/main.c.obj
 
 # target to build an object file
 Core/Src/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/main.c.obj
 .PHONY : Core/Src/main.c.obj
 
 Core/Src/main.i: Core/Src/main.c.i
@@ -211,7 +211,7 @@ Core/Src/main.i: Core/Src/main.c.i
 
 # target to preprocess a source file
 Core/Src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/main.c.i
 .PHONY : Core/Src/main.c.i
 
 Core/Src/main.s: Core/Src/main.c.s
@@ -220,7 +220,7 @@ Core/Src/main.s: Core/Src/main.c.s
 
 # target to generate assembly for a file
 Core/Src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/main.c.s
 .PHONY : Core/Src/main.c.s
 
 Core/Src/motor_control.obj: Core/Src/motor_control.c.obj
@@ -229,7 +229,7 @@ Core/Src/motor_control.obj: Core/Src/motor_control.c.obj
 
 # target to build an object file
 Core/Src/motor_control.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/motor_control.c.obj
 .PHONY : Core/Src/motor_control.c.obj
 
 Core/Src/motor_control.i: Core/Src/motor_control.c.i
@@ -238,7 +238,7 @@ Core/Src/motor_control.i: Core/Src/motor_control.c.i
 
 # target to preprocess a source file
 Core/Src/motor_control.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/motor_control.c.i
 .PHONY : Core/Src/motor_control.c.i
 
 Core/Src/motor_control.s: Core/Src/motor_control.c.s
@@ -247,7 +247,7 @@ Core/Src/motor_control.s: Core/Src/motor_control.c.s
 
 # target to generate assembly for a file
 Core/Src/motor_control.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/motor_control.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/motor_control.c.s
 .PHONY : Core/Src/motor_control.c.s
 
 Core/Src/pid_controller.obj: Core/Src/pid_controller.c.obj
@@ -256,7 +256,7 @@ Core/Src/pid_controller.obj: Core/Src/pid_controller.c.obj
 
 # target to build an object file
 Core/Src/pid_controller.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/pid_controller.c.obj
 .PHONY : Core/Src/pid_controller.c.obj
 
 Core/Src/pid_controller.i: Core/Src/pid_controller.c.i
@@ -265,7 +265,7 @@ Core/Src/pid_controller.i: Core/Src/pid_controller.c.i
 
 # target to preprocess a source file
 Core/Src/pid_controller.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/pid_controller.c.i
 .PHONY : Core/Src/pid_controller.c.i
 
 Core/Src/pid_controller.s: Core/Src/pid_controller.c.s
@@ -274,7 +274,7 @@ Core/Src/pid_controller.s: Core/Src/pid_controller.c.s
 
 # target to generate assembly for a file
 Core/Src/pid_controller.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/pid_controller.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/pid_controller.c.s
 .PHONY : Core/Src/pid_controller.c.s
 
 Core/Src/stm32g4xx_hal_msp.obj: Core/Src/stm32g4xx_hal_msp.c.obj
@@ -283,7 +283,7 @@ Core/Src/stm32g4xx_hal_msp.obj: Core/Src/stm32g4xx_hal_msp.c.obj
 
 # target to build an object file
 Core/Src/stm32g4xx_hal_msp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj
 .PHONY : Core/Src/stm32g4xx_hal_msp.c.obj
 
 Core/Src/stm32g4xx_hal_msp.i: Core/Src/stm32g4xx_hal_msp.c.i
@@ -292,7 +292,7 @@ Core/Src/stm32g4xx_hal_msp.i: Core/Src/stm32g4xx_hal_msp.c.i
 
 # target to preprocess a source file
 Core/Src/stm32g4xx_hal_msp.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.i
 .PHONY : Core/Src/stm32g4xx_hal_msp.c.i
 
 Core/Src/stm32g4xx_hal_msp.s: Core/Src/stm32g4xx_hal_msp.c.s
@@ -301,7 +301,7 @@ Core/Src/stm32g4xx_hal_msp.s: Core/Src/stm32g4xx_hal_msp.c.s
 
 # target to generate assembly for a file
 Core/Src/stm32g4xx_hal_msp.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_msp.c.s
 .PHONY : Core/Src/stm32g4xx_hal_msp.c.s
 
 Core/Src/stm32g4xx_hal_timebase_tim.obj: Core/Src/stm32g4xx_hal_timebase_tim.c.obj
@@ -310,7 +310,7 @@ Core/Src/stm32g4xx_hal_timebase_tim.obj: Core/Src/stm32g4xx_hal_timebase_tim.c.o
 
 # target to build an object file
 Core/Src/stm32g4xx_hal_timebase_tim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.obj
 .PHONY : Core/Src/stm32g4xx_hal_timebase_tim.c.obj
 
 Core/Src/stm32g4xx_hal_timebase_tim.i: Core/Src/stm32g4xx_hal_timebase_tim.c.i
@@ -319,7 +319,7 @@ Core/Src/stm32g4xx_hal_timebase_tim.i: Core/Src/stm32g4xx_hal_timebase_tim.c.i
 
 # target to preprocess a source file
 Core/Src/stm32g4xx_hal_timebase_tim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.i
 .PHONY : Core/Src/stm32g4xx_hal_timebase_tim.c.i
 
 Core/Src/stm32g4xx_hal_timebase_tim.s: Core/Src/stm32g4xx_hal_timebase_tim.c.s
@@ -328,7 +328,7 @@ Core/Src/stm32g4xx_hal_timebase_tim.s: Core/Src/stm32g4xx_hal_timebase_tim.c.s
 
 # target to generate assembly for a file
 Core/Src/stm32g4xx_hal_timebase_tim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/stm32g4xx_hal_timebase_tim.c.s
 .PHONY : Core/Src/stm32g4xx_hal_timebase_tim.c.s
 
 Core/Src/stm32g4xx_it.obj: Core/Src/stm32g4xx_it.c.obj
@@ -337,7 +337,7 @@ Core/Src/stm32g4xx_it.obj: Core/Src/stm32g4xx_it.c.obj
 
 # target to build an object file
 Core/Src/stm32g4xx_it.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.obj
 .PHONY : Core/Src/stm32g4xx_it.c.obj
 
 Core/Src/stm32g4xx_it.i: Core/Src/stm32g4xx_it.c.i
@@ -346,7 +346,7 @@ Core/Src/stm32g4xx_it.i: Core/Src/stm32g4xx_it.c.i
 
 # target to preprocess a source file
 Core/Src/stm32g4xx_it.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.i
 .PHONY : Core/Src/stm32g4xx_it.c.i
 
 Core/Src/stm32g4xx_it.s: Core/Src/stm32g4xx_it.c.s
@@ -355,7 +355,7 @@ Core/Src/stm32g4xx_it.s: Core/Src/stm32g4xx_it.c.s
 
 # target to generate assembly for a file
 Core/Src/stm32g4xx_it.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/stm32g4xx_it.c.s
 .PHONY : Core/Src/stm32g4xx_it.c.s
 
 Core/Src/syscalls.obj: Core/Src/syscalls.c.obj
@@ -364,7 +364,7 @@ Core/Src/syscalls.obj: Core/Src/syscalls.c.obj
 
 # target to build an object file
 Core/Src/syscalls.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/syscalls.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/syscalls.c.obj
 .PHONY : Core/Src/syscalls.c.obj
 
 Core/Src/syscalls.i: Core/Src/syscalls.c.i
@@ -373,7 +373,7 @@ Core/Src/syscalls.i: Core/Src/syscalls.c.i
 
 # target to preprocess a source file
 Core/Src/syscalls.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/syscalls.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/syscalls.c.i
 .PHONY : Core/Src/syscalls.c.i
 
 Core/Src/syscalls.s: Core/Src/syscalls.c.s
@@ -382,7 +382,7 @@ Core/Src/syscalls.s: Core/Src/syscalls.c.s
 
 # target to generate assembly for a file
 Core/Src/syscalls.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/syscalls.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/syscalls.c.s
 .PHONY : Core/Src/syscalls.c.s
 
 Core/Src/sysmem.obj: Core/Src/sysmem.c.obj
@@ -391,7 +391,7 @@ Core/Src/sysmem.obj: Core/Src/sysmem.c.obj
 
 # target to build an object file
 Core/Src/sysmem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/sysmem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/sysmem.c.obj
 .PHONY : Core/Src/sysmem.c.obj
 
 Core/Src/sysmem.i: Core/Src/sysmem.c.i
@@ -400,7 +400,7 @@ Core/Src/sysmem.i: Core/Src/sysmem.c.i
 
 # target to preprocess a source file
 Core/Src/sysmem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/sysmem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/sysmem.c.i
 .PHONY : Core/Src/sysmem.c.i
 
 Core/Src/sysmem.s: Core/Src/sysmem.c.s
@@ -409,7 +409,7 @@ Core/Src/sysmem.s: Core/Src/sysmem.c.s
 
 # target to generate assembly for a file
 Core/Src/sysmem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/sysmem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/sysmem.c.s
 .PHONY : Core/Src/sysmem.c.s
 
 Core/Src/system_stm32g4xx.obj: Core/Src/system_stm32g4xx.c.obj
@@ -418,7 +418,7 @@ Core/Src/system_stm32g4xx.obj: Core/Src/system_stm32g4xx.c.obj
 
 # target to build an object file
 Core/Src/system_stm32g4xx.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.obj
 .PHONY : Core/Src/system_stm32g4xx.c.obj
 
 Core/Src/system_stm32g4xx.i: Core/Src/system_stm32g4xx.c.i
@@ -427,7 +427,7 @@ Core/Src/system_stm32g4xx.i: Core/Src/system_stm32g4xx.c.i
 
 # target to preprocess a source file
 Core/Src/system_stm32g4xx.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.i
 .PHONY : Core/Src/system_stm32g4xx.c.i
 
 Core/Src/system_stm32g4xx.s: Core/Src/system_stm32g4xx.c.s
@@ -436,7 +436,7 @@ Core/Src/system_stm32g4xx.s: Core/Src/system_stm32g4xx.c.s
 
 # target to generate assembly for a file
 Core/Src/system_stm32g4xx.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/system_stm32g4xx.c.s
 .PHONY : Core/Src/system_stm32g4xx.c.s
 
 Core/Src/vofa_protocol.obj: Core/Src/vofa_protocol.c.obj
@@ -445,7 +445,7 @@ Core/Src/vofa_protocol.obj: Core/Src/vofa_protocol.c.obj
 
 # target to build an object file
 Core/Src/vofa_protocol.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.obj
 .PHONY : Core/Src/vofa_protocol.c.obj
 
 Core/Src/vofa_protocol.i: Core/Src/vofa_protocol.c.i
@@ -454,7 +454,7 @@ Core/Src/vofa_protocol.i: Core/Src/vofa_protocol.c.i
 
 # target to preprocess a source file
 Core/Src/vofa_protocol.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.i
 .PHONY : Core/Src/vofa_protocol.c.i
 
 Core/Src/vofa_protocol.s: Core/Src/vofa_protocol.c.s
@@ -463,7 +463,7 @@ Core/Src/vofa_protocol.s: Core/Src/vofa_protocol.c.s
 
 # target to generate assembly for a file
 Core/Src/vofa_protocol.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Src/vofa_protocol.c.s
 .PHONY : Core/Src/vofa_protocol.c.s
 
 Core/Startup/startup_stm32g474vetx.obj: Core/Startup/startup_stm32g474vetx.s.obj
@@ -472,7 +472,7 @@ Core/Startup/startup_stm32g474vetx.obj: Core/Startup/startup_stm32g474vetx.s.obj
 
 # target to build an object file
 Core/Startup/startup_stm32g474vetx.s.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Core/Startup/startup_stm32g474vetx.s.obj
 .PHONY : Core/Startup/startup_stm32g474vetx.s.obj
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
@@ -481,7 +481,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.obj: Drivers/STM32G4xx_HAL_Driver
 
 # target to build an object file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.i
@@ -490,7 +490,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.i: Drivers/STM32G4xx_HAL_Driver/S
 
 # target to preprocess a source file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.i
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.i
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.s
@@ -499,7 +499,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.s: Drivers/STM32G4xx_HAL_Driver/S
 
 # target to generate assembly for a file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.s
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.s
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
@@ -508,7 +508,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.obj: Drivers/STM32G4xx_HAL
 
 # target to build an object file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.i
@@ -517,7 +517,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.i: Drivers/STM32G4xx_HAL_D
 
 # target to preprocess a source file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.i
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.i
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.s
@@ -526,7 +526,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.s: Drivers/STM32G4xx_HAL_D
 
 # target to generate assembly for a file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.s
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.s
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
@@ -535,7 +535,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.obj: Drivers/STM32G4xx_HAL_Dr
 
 # target to build an object file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.i
@@ -544,7 +544,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.i: Drivers/STM32G4xx_HAL_Driv
 
 # target to preprocess a source file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.i
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.i
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.s
@@ -553,7 +553,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.s: Drivers/STM32G4xx_HAL_Driv
 
 # target to generate assembly for a file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.s
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.s
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj
@@ -562,7 +562,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.obj: Drivers/STM32G4xx_HAL
 
 # target to build an object file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.i
@@ -571,7 +571,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.i: Drivers/STM32G4xx_HAL_D
 
 # target to preprocess a source file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.i
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.i
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.s
@@ -580,7 +580,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.s: Drivers/STM32G4xx_HAL_D
 
 # target to generate assembly for a file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.s
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.s
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj
@@ -589,7 +589,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.obj: Drivers/STM32G4xx_HAL_D
 
 # target to build an object file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.i
@@ -598,7 +598,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.i: Drivers/STM32G4xx_HAL_Dri
 
 # target to preprocess a source file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.i
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.i
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.s
@@ -607,7 +607,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.s: Drivers/STM32G4xx_HAL_Dri
 
 # target to generate assembly for a file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.s
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.s
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
@@ -616,7 +616,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.obj: Drivers/STM32G4xx_HAL_
 
 # target to build an object file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.obj
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.i
@@ -625,7 +625,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.i: Drivers/STM32G4xx_HAL_Dr
 
 # target to preprocess a source file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.i
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.i
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.s
@@ -634,7 +634,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.s: Drivers/STM32G4xx_HAL_Dr
 
 # target to generate assembly for a file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.s
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c.s
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj
@@ -643,7 +643,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.obj: Drivers/STM32G4xx_HAL_
 
 # target to build an object file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.i
@@ -652,7 +652,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.i: Drivers/STM32G4xx_HAL_Dr
 
 # target to preprocess a source file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.i
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.i
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.s
@@ -661,7 +661,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.s: Drivers/STM32G4xx_HAL_Dr
 
 # target to generate assembly for a file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.s
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.s
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj
@@ -670,7 +670,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.obj: Drivers/STM32G4xx_H
 
 # target to build an object file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.i
@@ -679,7 +679,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.i: Drivers/STM32G4xx_HAL
 
 # target to preprocess a source file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.i
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.i
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.s
@@ -688,7 +688,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.s: Drivers/STM32G4xx_HAL
 
 # target to generate assembly for a file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.s
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.s
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj
@@ -697,7 +697,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.obj: Drivers/STM32G
 
 # target to build an object file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.i
@@ -706,7 +706,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.i: Drivers/STM32G4x
 
 # target to preprocess a source file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.i
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.i
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.s
@@ -715,7 +715,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.s: Drivers/STM32G4x
 
 # target to generate assembly for a file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.s
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.s
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
@@ -724,7 +724,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.obj: Drivers/STM32G4xx_HAL_D
 
 # target to build an object file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.i
@@ -733,7 +733,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.i: Drivers/STM32G4xx_HAL_Dri
 
 # target to preprocess a source file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.i
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.i
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.s
@@ -742,7 +742,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.s: Drivers/STM32G4xx_HAL_Dri
 
 # target to generate assembly for a file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.s
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.s
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj
@@ -751,7 +751,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.obj: Drivers/STM32G4xx_HAL_Dr
 
 # target to build an object file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.i
@@ -760,7 +760,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.i: Drivers/STM32G4xx_HAL_Driv
 
 # target to preprocess a source file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.i
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.i
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.s
@@ -769,7 +769,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.s: Drivers/STM32G4xx_HAL_Driv
 
 # target to generate assembly for a file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.s
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.s
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
@@ -778,7 +778,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.obj: Drivers/STM32G4xx_HAL
 
 # target to build an object file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.i
@@ -787,7 +787,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.i: Drivers/STM32G4xx_HAL_D
 
 # target to preprocess a source file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.i
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.i
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.s
@@ -796,7 +796,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.s: Drivers/STM32G4xx_HAL_D
 
 # target to generate assembly for a file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.s
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.s
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
@@ -805,7 +805,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.obj: Drivers/STM32G4xx_HAL_Dr
 
 # target to build an object file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.i
@@ -814,7 +814,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.i: Drivers/STM32G4xx_HAL_Driv
 
 # target to preprocess a source file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.i
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.i
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.s
@@ -823,7 +823,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.s: Drivers/STM32G4xx_HAL_Driv
 
 # target to generate assembly for a file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.s
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.s
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
@@ -832,7 +832,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.obj: Drivers/STM32G4xx_HAL
 
 # target to build an object file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.i
@@ -841,7 +841,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.i: Drivers/STM32G4xx_HAL_D
 
 # target to preprocess a source file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.i
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.i
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.s
@@ -850,7 +850,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.s: Drivers/STM32G4xx_HAL_D
 
 # target to generate assembly for a file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.s
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.s
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
@@ -859,7 +859,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.obj: Drivers/STM32G4xx_HAL_Dr
 
 # target to build an object file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.i
@@ -868,7 +868,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.i: Drivers/STM32G4xx_HAL_Driv
 
 # target to preprocess a source file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.i
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.i
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.s
@@ -877,7 +877,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.s: Drivers/STM32G4xx_HAL_Driv
 
 # target to generate assembly for a file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.s
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.s
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
@@ -886,7 +886,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.obj: Drivers/STM32G4xx_HAL
 
 # target to build an object file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.i
@@ -895,7 +895,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.i: Drivers/STM32G4xx_HAL_D
 
 # target to preprocess a source file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.i
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.i
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.s
@@ -904,7 +904,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.s: Drivers/STM32G4xx_HAL_D
 
 # target to generate assembly for a file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.s
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.s
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
@@ -913,7 +913,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.obj: Drivers/STM32G4xx_HAL_D
 
 # target to build an object file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.i
@@ -922,7 +922,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.i: Drivers/STM32G4xx_HAL_Dri
 
 # target to preprocess a source file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.i
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.i
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.s
@@ -931,7 +931,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.s: Drivers/STM32G4xx_HAL_Dri
 
 # target to generate assembly for a file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.s
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.s
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.obj: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
@@ -940,7 +940,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.obj: Drivers/STM32G4xx_HA
 
 # target to build an object file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.i: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.i
@@ -949,7 +949,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.i: Drivers/STM32G4xx_HAL_
 
 # target to preprocess a source file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.i
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.i
 
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.s: Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.s
@@ -958,7 +958,7 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.s: Drivers/STM32G4xx_HAL_
 
 # target to generate assembly for a file
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\M3508_Motor_Control.elf.dir\build.make CMakeFiles/M3508_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\M2006_Motor_Control.elf.dir\build.make CMakeFiles/M2006_Motor_Control.elf.dir/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.s
 .PHONY : Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.s
 
 # Help Target
@@ -969,13 +969,13 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... M3508_Motor_Control.elf
+	@echo ... M2006_Motor_Control.elf
 	@echo ... Core/Src/can_communication.obj
 	@echo ... Core/Src/can_communication.i
 	@echo ... Core/Src/can_communication.s
-	@echo ... Core/Src/m3508_motor.obj
-	@echo ... Core/Src/m3508_motor.i
-	@echo ... Core/Src/m3508_motor.s
+	@echo ... Core/Src/m2006_motor.obj
+	@echo ... Core/Src/m2006_motor.i
+	@echo ... Core/Src/m2006_motor.s
 	@echo ... Core/Src/main.obj
 	@echo ... Core/Src/main.i
 	@echo ... Core/Src/main.s

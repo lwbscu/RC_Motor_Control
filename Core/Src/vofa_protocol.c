@@ -12,26 +12,27 @@ void VOFA_ProcessCommand(void) {
     char *cmd = (char*)vofa.cmd_buffer;
     float value1, value2;
 
+    // 关键修改：重命名 M3508_ -> M2006_
     // PID参数设置
     if (sscanf(cmd, "pid:kp,%f", &value1) == 1) {
-        M3508_SetSpeedPID(value1, motor.speed_pid.ki, motor.speed_pid.kd);
+        M2006_SetSpeedPID(value1, motor.speed_pid.ki, motor.speed_pid.kd);
     }
     else if (sscanf(cmd, "pid:ki,%f", &value1) == 1) {
-        M3508_SetSpeedPID(motor.speed_pid.kp, value1, motor.speed_pid.kd);
+        M2006_SetSpeedPID(motor.speed_pid.kp, value1, motor.speed_pid.kd);
     }
     else if (sscanf(cmd, "pid:kd,%f", &value1) == 1) {
-        M3508_SetSpeedPID(motor.speed_pid.kp, motor.speed_pid.ki, value1);
+        M2006_SetSpeedPID(motor.speed_pid.kp, motor.speed_pid.ki, value1);
     }
 
         // 位置PID参数
     else if (sscanf(cmd, "pos_pid:kp,%f", &value1) == 1) {
-        M3508_SetPositionPID(value1, motor.position_pid.ki, motor.position_pid.kd);
+        M2006_SetPositionPID(value1, motor.position_pid.ki, motor.position_pid.kd);
     }
     else if (sscanf(cmd, "pos_pid:ki,%f", &value1) == 1) {
-        M3508_SetPositionPID(motor.position_pid.kp, value1, motor.position_pid.kd);
+        M2006_SetPositionPID(motor.position_pid.kp, value1, motor.position_pid.kd);
     }
     else if (sscanf(cmd, "pos_pid:kd,%f", &value1) == 1) {
-        M3508_SetPositionPID(motor.position_pid.kp, motor.position_pid.ki, value1);
+        M2006_SetPositionPID(motor.position_pid.kp, motor.position_pid.ki, value1);
     }
 
         // 控制模式
@@ -44,25 +45,24 @@ void VOFA_ProcessCommand(void) {
 
         // 运动控制
     else if (sscanf(cmd, "speed:%f", &value1) == 1) {
-        M3508_SetTargetSpeed(value1);
+        M2006_SetTargetSpeed(value1);
         motor.control_type = CONTROL_SPEED;
     }
     else if (sscanf(cmd, "position:%f", &value1) == 1) {
-        M3508_SetTargetPosition(value1);
+        M2006_SetTargetPosition(value1);
         motor.control_type = CONTROL_POSITION;
     }
     else if (sscanf(cmd, "cascade:%f,%f", &value1, &value2) == 2) {
-        M3508_SetCascadeTarget(value1, value2);
+        M2006_SetCascadeTarget(value1, value2);
         motor.control_type = CONTROL_CASCADE;
     }
 
         // 串级控制专用命令 - 只设置参数，不切换模式
     else if (sscanf(cmd, "type3_speed:%f", &value1) == 1) {
-        // 在串级模式下，这个速度参数暂不使用（因为速度由位置环输出决定）
-        M3508_SetTargetSpeed(value1);
+        M2006_SetTargetSpeed(value1);
     }
     else if (sscanf(cmd, "type3_pos:%f", &value1) == 1) {
-        M3508_SetTargetPosition(value1);
+        M2006_SetTargetPosition(value1);
     }
     else if (sscanf(cmd, "cascade3_enable:%f", &value1) == 1) {
         if (value1 > 0) {
@@ -77,12 +77,12 @@ void VOFA_ProcessCommand(void) {
     else if (sscanf(cmd, "speed_mode:%f", &value1) == 1) {
         float speeds[] = {0.5f, 1.0f, 2.0f};
         if (value1 >= 0 && value1 <= 2) {
-            M3508_SetTargetSpeed(speeds[(int)value1]);
+            M2006_SetTargetSpeed(speeds[(int)value1]);
             motor.control_type = CONTROL_SPEED;
         }
     }
     else if (sscanf(cmd, "position_mode:%f", &value1) == 1){
-        M3508_SetTargetPosition(value1);
+        M2006_SetTargetPosition(value1);
         motor.control_type = CONTROL_POSITION;
     }
 

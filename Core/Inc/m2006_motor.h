@@ -1,12 +1,14 @@
-#ifndef M3508_MOTOR_H
-#define M3508_MOTOR_H
+#ifndef M2006_MOTOR_H
+#define M2006_MOTOR_H
 
 #include "main.h"
 #include "pid_controller.h"
 #include "can_communication.h"
 #include <math.h>
 
-#define GEAR_RATIO 19.0f
+// 关键修改：M2006 P36 减速比为 36:1
+#define GEAR_RATIO 36.0f
+// 编码器分辨率 (由C610电调提供，0-8191)
 #define ENCODER_RESOLUTION 8192.0f
 
 typedef enum {
@@ -20,6 +22,7 @@ typedef enum {
     CONTROL_SOURCE_VOFA = 1
 } Control_Source_t;
 
+// 重命名结构体
 typedef struct {
     // 目标值
     float target_speed;
@@ -45,17 +48,19 @@ typedef struct {
     uint8_t control_type;
     uint8_t control_source;
     uint8_t last_control_type;
-} M3508_Motor_t;
+} M2006_Motor_t;
 
-extern M3508_Motor_t motor;
+// 重命名全局变量
+extern M2006_Motor_t motor;
 
-void M3508_Init(void);
-void M3508_UpdateFeedback(void);
-void M3508_SetTargetSpeed(float target_speed);
-void M3508_SetTargetPosition(float target_position);
-void M3508_SetCascadeTarget(float position, float speed);
-void M3508_SetSpeedPID(float kp, float ki, float kd);
-void M3508_SetPositionPID(float kp, float ki, float kd);
-void M3508_ControlUpdate(void);
+// 重命名函数
+void M2006_Init(void);
+void M2006_UpdateFeedback(void);
+void M2006_SetTargetSpeed(float target_speed);
+void M2006_SetTargetPosition(float target_position);
+void M2006_SetCascadeTarget(float position, float speed);
+void M2006_SetSpeedPID(float kp, float ki, float kd);
+void M2006_SetPositionPID(float kp, float ki, float kd);
+void M2006_ControlUpdate(void);
 
 #endif

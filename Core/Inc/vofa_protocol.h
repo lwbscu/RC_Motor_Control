@@ -2,7 +2,8 @@
 #define VOFA_PROTOCOL_H
 
 #include "main.h"
-#include "m3508_motor.h"
+// 关键修改：包含新的头文件
+#include "m2006_motor.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
