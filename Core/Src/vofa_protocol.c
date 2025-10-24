@@ -10,22 +10,10 @@ void VOFA_ProcessCommand(void) {
     if (!vofa.cmd_ready) return;
 
     char *cmd = (char*)vofa.cmd_buffer;
-    float value1, value2;
+    float value1;
 
-    // 关键修改：重命名 M3508_ -> M2006_
-    // PID参数设置
-    if (sscanf(cmd, "pid:kp,%f", &value1) == 1) {
-        M2006_SetSpeedPID(value1, motor.speed_pid.ki, motor.speed_pid.kd);
-    }
-    else if (sscanf(cmd, "pid:ki,%f", &value1) == 1) {
-        M2006_SetSpeedPID(motor.speed_pid.kp, value1, motor.speed_pid.kd);
-    }
-    else if (sscanf(cmd, "pid:kd,%f", &value1) == 1) {
-        M2006_SetSpeedPID(motor.speed_pid.kp, motor.speed_pid.ki, value1);
-    }
-
-        // 位置PID参数
-    else if (sscanf(cmd, "pos_pid:kp,%f", &value1) == 1) {
+    // PID参数设置 (指令不变, 但现在调整的是基于弧度的PID)
+    if (sscanf(cmd, "pos_pid:kp,%f", &value1) == 1) { // 指令保持 pos_pid: 不变
         M2006_SetPositionPID(value1, motor.position_pid.ki, motor.position_pid.kd);
     }
     else if (sscanf(cmd, "pos_pid:ki,%f", &value1) == 1) {
@@ -35,55 +23,9 @@ void VOFA_ProcessCommand(void) {
         M2006_SetPositionPID(motor.position_pid.kp, motor.position_pid.ki, value1);
     }
 
-        // 控制模式
-    else if (sscanf(cmd, "control_mode:%f", &value1) == 1) {
-        motor.control_source = (uint8_t)value1;
-    }
-    else if (sscanf(cmd, "control_type:%f", &value1) == 1) {
-        motor.control_type = (uint8_t)value1;
-    }
-
-        // 运动控制
-    else if (sscanf(cmd, "speed:%f", &value1) == 1) {
-        M2006_SetTargetSpeed(value1);
-        motor.control_type = CONTROL_SPEED;
-    }
+        // 运动控制 (输入仍然是 输出轴圈数)
     else if (sscanf(cmd, "position:%f", &value1) == 1) {
-        M2006_SetTargetPosition(value1);
-        motor.control_type = CONTROL_POSITION;
-    }
-    else if (sscanf(cmd, "cascade:%f,%f", &value1, &value2) == 2) {
-        M2006_SetCascadeTarget(value1, value2);
-        motor.control_type = CONTROL_CASCADE;
-    }
-
-        // 串级控制专用命令 - 只设置参数，不切换模式
-    else if (sscanf(cmd, "type3_speed:%f", &value1) == 1) {
-        M2006_SetTargetSpeed(value1);
-    }
-    else if (sscanf(cmd, "type3_pos:%f", &value1) == 1) {
-        M2006_SetTargetPosition(value1);
-    }
-    else if (sscanf(cmd, "cascade3_enable:%f", &value1) == 1) {
-        if (value1 > 0) {
-            motor.enabled = 1;
-            motor.control_type = CONTROL_CASCADE;
-        } else {
-            motor.enabled = 0;
-        }
-    }
-
-        // 档位控制
-    else if (sscanf(cmd, "speed_mode:%f", &value1) == 1) {
-        float speeds[] = {0.5f, 1.0f, 2.0f};
-        if (value1 >= 0 && value1 <= 2) {
-            M2006_SetTargetSpeed(speeds[(int)value1]);
-            motor.control_type = CONTROL_SPEED;
-        }
-    }
-    else if (sscanf(cmd, "position_mode:%f", &value1) == 1){
-        M2006_SetTargetPosition(value1);
-        motor.control_type = CONTROL_POSITION;
+        M2006_SetTargetPosition(value1); // 函数内部会做单位转换
     }
 
         // 基础控制
@@ -97,18 +39,25 @@ void VOFA_ProcessCommand(void) {
     vofa.cmd_ready = 0;
 }
 
+// =================================================================
+// 关键修改：VOFA_SendData() - 发送外部单位
+// =================================================================
 void VOFA_SendData(void) {
     char buffer[256];
+
+    // 发送给VOFA+的数据帧
+    // 1: 目标位置 (输出轴圈数)
+    // 2: 当前位置 (输出轴圈数)
+    // 3: PID输出 (电流)
+    // 4: 当前速度 (输出轴 圈/秒, rps) <- 转换回来方便观察
+    float current_speed_rps_output = motor.current_speed_rad_s / (GEAR_RATIO * 2.0f * M_PI);
+
     int len = snprintf(buffer, sizeof(buffer),
-                       "%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f\n",
-                       motor.target_speed,
-                       motor.current_speed,
-                       motor.target_position,
-                       motor.current_position,
-                       motor.speed_pid.output,
-                       motor.position_pid.output,
-                       (float)motor.output_current,
-                       (float)motor.control_type
+                       "%.3f,%.3f,%.2f,%.3f\n",
+                       motor.target_position_turns, // 发送外部目标
+                       motor.current_position_turns, // 发送外部位置
+                       motor.position_pid.output,    // PID输出电流
+                       current_speed_rps_output      // 发送外部速度
     );
     HAL_UART_Transmit(&huart1, (uint8_t*)buffer, len, 100);
 }

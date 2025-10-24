@@ -4,62 +4,49 @@
 #include "main.h"
 #include "pid_controller.h"
 #include "can_communication.h"
-#include <math.h>
+#include <math.h> // 需要包含 math.h 以使用 M_PI
 
-// 关键修改：M2006 P36 减速比为 36:1
+// M_PI 定义 (如果 math.h 中没有)
+#ifndef M_PI
+#define M_PI 3.14159265358979323846f
+#endif
+
+// 物理参数
 #define GEAR_RATIO 36.0f
-// 编码器分辨率 (由C610电调提供，0-8191)
 #define ENCODER_RESOLUTION 8192.0f
+#define RAD_PER_ENCODER_TICK (2.0f * M_PI / ENCODER_RESOLUTION) // 每编码器计数对应的弧度
 
-typedef enum {
-    CONTROL_SPEED = 0,
-    CONTROL_POSITION = 1,
-    CONTROL_CASCADE = 2
-} Control_Type_t;
-
-typedef enum {
-    CONTROL_SOURCE_BUTTON = 0,
-    CONTROL_SOURCE_VOFA = 1
-} Control_Source_t;
-
-// 重命名结构体
 typedef struct {
-    // 目标值
-    float target_speed;
-    float target_position;
+    // --- 接口单位 (输出轴) ---
+    float target_position_turns;   // 目标位置 (圈数) - VOFA输入/设置
+    float current_position_turns;  // 当前位置 (圈数) - VOFA显示
 
-    // 当前值
-    float current_speed;
-    float current_position;
+    // --- 内部单位 (电机轴) ---
+    float target_position_radians; // 内部PID目标位置 (弧度)
+    float current_position_radians;// 内部PID当前位置 (弧度)
+    float current_speed_rad_s;     // 内部PID当前速度 (弧度/秒)
 
     // PID控制器
-    PID_Controller_t speed_pid;
     PID_Controller_t position_pid;
 
     // 控制参数
     int16_t output_current;
-    uint16_t last_encoder;
-    int32_t encoder_rounds;
+    uint16_t last_encoder;      // 上一次的原始编码器值 (0-8191)
+    int64_t total_encoder_ticks; // 累积的总编码器tick数 (用于计算弧度)
 
     // 状态标志
     uint8_t initialized;
     uint8_t enabled;
-    uint8_t direction;
-    uint8_t control_type;
-    uint8_t control_source;
-    uint8_t last_control_type;
+    uint8_t direction; // 注意：方向控制现在会反转目标弧度
+
 } M2006_Motor_t;
 
-// 重命名全局变量
 extern M2006_Motor_t motor;
 
-// 重命名函数
+// 函数声明保持不变，但内部实现会改变
 void M2006_Init(void);
 void M2006_UpdateFeedback(void);
-void M2006_SetTargetSpeed(float target_speed);
-void M2006_SetTargetPosition(float target_position);
-void M2006_SetCascadeTarget(float position, float speed);
-void M2006_SetSpeedPID(float kp, float ki, float kd);
+void M2006_SetTargetPosition(float target_position_turns); // 参数名明确单位
 void M2006_SetPositionPID(float kp, float ki, float kd);
 void M2006_ControlUpdate(void);
 

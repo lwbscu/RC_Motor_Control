@@ -1,5 +1,5 @@
 #include "motor_control.h"
-// 关键修改：包含新的头文件
+// 关键修改：确保包含新的头文件
 #include "m2006_motor.h"
 #include "can_communication.h"
 
