@@ -24,12 +24,6 @@ math.h
 stm32g4xx_hal.h
 ../Core/Inc/stm32g4xx_hal.h
 
-../Core/Inc/motor_control.h
-main.h
-../Core/Inc/main.h
-vofa_protocol.h
-../Core/Inc/vofa_protocol.h
-
 ../Core/Inc/pid_controller.h
 stdint.h
 -
@@ -314,13 +308,9 @@ D:/STM32CubeMx/Project_File/STM32_Project/M2006_Motor_Control/Core/Src/m2006_mot
 m2006_motor.h
 D:/STM32CubeMx/Project_File/STM32_Project/M2006_Motor_Control/Core/Src/m2006_motor.h
 
-D:/STM32CubeMx/Project_File/STM32_Project/M2006_Motor_Control/Core/Src/main.c
-main.h
-D:/STM32CubeMx/Project_File/STM32_Project/M2006_Motor_Control/Core/Src/main.h
-motor_control.h
-D:/STM32CubeMx/Project_File/STM32_Project/M2006_Motor_Control/Core/Src/motor_control.h
-can_communication.h
-D:/STM32CubeMx/Project_File/STM32_Project/M2006_Motor_Control/Core/Src/can_communication.h
+D:/STM32CubeMx/Project_File/STM32_Project/M2006_Motor_Control/Core/Src/vofa_protocol.c
 vofa_protocol.h
 D:/STM32CubeMx/Project_File/STM32_Project/M2006_Motor_Control/Core/Src/vofa_protocol.h
+math.h
+-
 

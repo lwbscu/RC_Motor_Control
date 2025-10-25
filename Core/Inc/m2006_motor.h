@@ -11,7 +11,7 @@
 #define M_PI 3.14159265358979323846f
 #endif
 
-// 物理参数
+// 物理参数 [cite: 241, 437]
 #define GEAR_RATIO 36.0f
 #define ENCODER_RESOLUTION 8192.0f
 #define RAD_PER_ENCODER_TICK (2.0f * M_PI / ENCODER_RESOLUTION) // 每编码器计数对应的弧度
@@ -37,11 +37,12 @@ typedef struct {
     // 状态标志
     uint8_t initialized;
     uint8_t enabled;
-    uint8_t direction; // 注意：方向控制现在会反转目标弧度
+    uint8_t direction; // 0: 正向, 1: 反向
 
 } M2006_Motor_t;
 
-extern M2006_Motor_t motor;
+// 关键修改：将 motor 扩展为数组, [0] 对应 ID 3, [1] 对应 ID 4
+extern M2006_Motor_t motor[2];
 
 // 函数声明保持不变，但内部实现会改变
 void M2006_Init(void);
