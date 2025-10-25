@@ -26,9 +26,9 @@ void M2006_Init(void) {
 
         // 两个电机使用相同的PID参数
         PID_Init(&motor[i].position_pid,
-                 50.0f,     // Kp (起始值)
+                 111.0f,     // Kp (起始值)
                  0.0f,      // Ki (保持0)
-                 1.0f,      // Kd (起始值)
+                 10.0f,      // Kd (起始值)
                  10000.0f,  // MaxOutput (C610电流极限)
                  0.0f);     // MaxIntegral (不使用积分)
     }
